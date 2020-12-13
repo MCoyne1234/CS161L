@@ -1,0 +1,12 @@
+MO adder NULL ../../given_files/adder.v vlg54/adder.bin 1557348821
+MO cs161_datapath NULL ../../given_files/D_P.v vlg50/cs161__datapath.bin 1557348821
+MO mux_2_1 NULL ../../given_files/mux_2_1.v vlg57/mux__2__1.bin 1557348821
+MO alu_control NULL ../../given_files/alu_control.v vlg5E/alu__control.bin 1557348821
+MO mux_2_1_5bit NULL ../../given_files/mux_2_1_5bit.v vlg66/mux__2__1__5bit.bin 1557348821
+MO cpu_registers NULL ../../given_files/cpu_registers.v vlg0B/cpu__registers.bin 1557348821
+MO gen_register NULL ../../given_files/gen_register.v vlg36/gen__register.bin 1557348821
+MO sign_extend NULL ../../given_files/sign_extend.v vlg68/sign__extend.bin 1557348821
+MO cs161_processor NULL ../../given_files/PROC.v vlg41/cs161__processor.bin 1557348821
+MO control_unit NULL ../../given_files/control_unit.v vlg64/control__unit.bin 1557348821
+MO cpumemory NULL ../../given_files/cpumemory.v vlg39/cpumemory.bin 1557348821
+MO alu NULL ../../given_files/alu.v vlg0A/alu.bin 1557348821

@@ -1,0 +1,41 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o D:/UCR/2019 Spring/CS161L/Lab6/cam_version2/lab06_tb_isim_beh.exe -prj D:/UCR/2019 Spring/CS161L/Lab6/cam_version2/lab06_tb_beh.prj work.lab06_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/UCR/2019 Spring/CS161L/Lab6/cam_version2/../Resources/TCAM_Cell.v" into library work
+Analyzing Verilog file "D:/UCR/2019 Spring/CS161L/Lab6/cam_version2/../Resources/STCAM_Cell.v" into library work
+Analyzing Verilog file "D:/UCR/2019 Spring/CS161L/Lab6/cam_version2/../Resources/BCAM_Cell.v" into library work
+Analyzing Verilog file "D:/UCR/2019 Spring/CS161L/Lab6/cam_version2/../Resources/CAM_Row_t.v" into library work
+Analyzing Verilog file "D:/UCR/2019 Spring/CS161L/Lab6/cam_version2/../Resources/CAM_Row_st.v" into library work
+Analyzing Verilog file "D:/UCR/2019 Spring/CS161L/Lab6/cam_version2/../Resources/CAM_Row.v" into library work
+Analyzing Verilog file "D:/UCR/2019 Spring/CS161L/Lab6/cam_version2/../Resources/CAM_Array_t.v" into library work
+Analyzing Verilog file "D:/UCR/2019 Spring/CS161L/Lab6/cam_version2/../Resources/CAM_Array_st.v" into library work
+Analyzing Verilog file "D:/UCR/2019 Spring/CS161L/Lab6/cam_version2/../Resources/CAM_Array.v" into library work
+Analyzing Verilog file "D:/UCR/2019 Spring/CS161L/Lab6/cam_version2/../Resources/CAM_Wrapper_t.v" into library work
+Analyzing Verilog file "D:/UCR/2019 Spring/CS161L/Lab6/cam_version2/../Resources/CAM_Wrapper_st.v" into library work
+Analyzing Verilog file "D:/UCR/2019 Spring/CS161L/Lab6/cam_version2/../Resources/CAM_Wrapper.v" into library work
+Analyzing Verilog file "D:/UCR/2019 Spring/CS161L/Lab6/cam_version2/../Resources/CAM_Wrapper_tb.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module BCAM_Cell
+Compiling module CAM_Row_default
+Compiling module CAM_Array_default
+Compiling module CAM_Wrapper
+Compiling module TCAM_Cell
+Compiling module CAM_Row_t_default
+Compiling module CAM_Array_t_default
+Compiling module CAM_Wrapper_t
+Compiling module STCAM_Cell
+Compiling module CAM_Row_st_default
+Compiling module CAM_Array_st_default
+Compiling module CAM_Wrapper_st
+Compiling module lab06_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\lab06_tb_isim_beh.exe.sim\libPortability.dll".
+Compiled 14 Verilog Units
+Built simulation executable D:/UCR/2019 Spring/CS161L/Lab6/cam_version2/lab06_tb_isim_beh.exe
+Fuse Memory Usage: 28048 KB
+Fuse CPU Usage: 483 ms

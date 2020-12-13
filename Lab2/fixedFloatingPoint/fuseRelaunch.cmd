@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/UCR/2019 Spring/CS161L/Lab2/fixedFloatingPoint/fixedFloatConversion_tb_isim_beh.exe" -prj "D:/UCR/2019 Spring/CS161L/Lab2/fixedFloatingPoint/fixedFloatConversion_tb_beh.prj" "work.fixedFloatConversion_tb" "work.glbl" 

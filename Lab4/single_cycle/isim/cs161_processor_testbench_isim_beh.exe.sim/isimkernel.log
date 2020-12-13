@@ -1,0 +1,29 @@
+Command line:
+   cs161_processor_testbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50571
+
+Wed May 08 15:03:02 2019
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 845.861 Meg
+
+ Total Signals          : 105
+ Total Nets             : 633
+ Total Signal Drivers   : 42
+ Total Blocks           : 15
+ Total Primitive Blocks : 13
+ Total Processes        : 53
+ Total Traceable Variables  : 50
+ Total Scalar Nets and Variables : 10414
+Total Line Count : 149
+
+ Total Simulation Time: 0.171875 sec
+
+ Current Memory Usage: 374.002 Meg
+
+Wed May 08 15:04:23 2019
+

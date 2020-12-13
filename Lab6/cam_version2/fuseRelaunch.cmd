@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/UCR/2019 Spring/CS161L/Lab6/cam_version2/lab06_tb_isim_beh.exe" -prj "D:/UCR/2019 Spring/CS161L/Lab6/cam_version2/lab06_tb_beh.prj" "work.lab06_tb" "work.glbl" 

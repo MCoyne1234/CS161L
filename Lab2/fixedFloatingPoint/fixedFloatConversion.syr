@@ -1,0 +1,443 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.25 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.25 secs
+ 
+--> Reading design: fixedFloatConversion.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "fixedFloatConversion.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "fixedFloatConversion"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-tq144
+
+---- Source Options
+Top Module Name                    : fixedFloatConversion
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "fixedFloatConversion.v" in library work
+Module <fixedFloatConversion> compiled
+No errors in compilation
+Analysis of file <"fixedFloatConversion.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <fixedFloatConversion> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <fixedFloatConversion>.
+Module <fixedFloatConversion> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <i> in unit <fixedFloatConversion> has a constant value of 11111 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <fixedFloatConversion>.
+    Related source file is "fixedFloatConversion.v".
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <temp> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <target> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <sign<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <mantissa> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <fixpp> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <exponent> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit register for signal <result>.
+    Found 8-bit subtractor for signal <old_exponent_5$addsub0000> created at line 55.
+    Found 8-bit adder for signal <old_exponent_5$addsub0001> created at line 55.
+    Found 10-bit adder for signal <old_lead_7$add0000> created at line 74.
+    Found 11-bit adder for signal <old_lead_7$sub0000> created at line 74.
+    Found 32-bit adder for signal <old_target_1$addsub0000> created at line 45.
+    Found 32-bit adder for signal <old_target_3$addsub0000> created at line 58.
+    Found 32-bit shifter logical left for signal <old_target_3$shift0000>.
+    Found 32-bit adder for signal <old_temp_10$addsub0000> created at line 89.
+    Found 32-bit adder for signal <old_temp_9$addsub0000> created at line 86.
+    Found 33-bit comparator greater for signal <old_temp_9$cmp_gt0000> created at line 80.
+    Found 33-bit comparator less for signal <old_temp_9$cmp_lt0000> created at line 84.
+    Found 32-bit shifter logical right for signal <old_temp_9$shift0002> created at line 82.
+    Found 32-bit shifter logical left for signal <old_temp_9$shift0003> created at line 86.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+	inferred   9 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred  32 Multiplexer(s).
+	inferred   3 Combinational logic shifter(s).
+Unit <fixedFloatConversion> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 9
+ 10-bit adder                                          : 1
+ 11-bit adder                                          : 1
+ 32-bit adder                                          : 4
+ 8-bit adder                                           : 1
+ 8-bit subtractor                                      : 1
+ 9-bit subtractor                                      : 1
+# Registers                                            : 1
+ 32-bit register                                       : 1
+# Comparators                                          : 2
+ 33-bit comparator greater                             : 1
+ 33-bit comparator less                                : 1
+# Multiplexers                                         : 1
+ 32-bit 4-to-1 multiplexer                             : 1
+# Logic shifters                                       : 3
+ 32-bit shifter logical left                           : 2
+ 32-bit shifter logical right                          : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 9
+ 10-bit adder                                          : 1
+ 11-bit adder                                          : 1
+ 32-bit adder                                          : 4
+ 8-bit adder                                           : 1
+ 8-bit subtractor                                      : 1
+ 9-bit subtractor                                      : 1
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+# Comparators                                          : 2
+ 33-bit comparator greater                             : 1
+ 33-bit comparator less                                : 1
+# Multiplexers                                         : 1
+ 32-bit 4-to-1 multiplexer                             : 1
+# Logic shifters                                       : 3
+ 32-bit shifter logical left                           : 2
+ 32-bit shifter logical right                          : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2170 - Unit fixedFloatConversion : the following signal(s) form a combinatorial loop: _old_lead_2<6>.
+WARNING:Xst:2170 - Unit fixedFloatConversion : the following signal(s) form a combinatorial loop: _old_lead_2<9>.
+WARNING:Xst:2170 - Unit fixedFloatConversion : the following signal(s) form a combinatorial loop: _old_lead_2<1>.
+WARNING:Xst:2170 - Unit fixedFloatConversion : the following signal(s) form a combinatorial loop: _old_lead_2<16>.
+WARNING:Xst:2170 - Unit fixedFloatConversion : the following signal(s) form a combinatorial loop: _old_lead_2<26>.
+WARNING:Xst:2170 - Unit fixedFloatConversion : the following signal(s) form a combinatorial loop: _old_lead_2<10>.
+WARNING:Xst:2170 - Unit fixedFloatConversion : the following signal(s) form a combinatorial loop: _old_lead_2<22>.
+WARNING:Xst:2170 - Unit fixedFloatConversion : the following signal(s) form a combinatorial loop: _old_lead_2<19>.
+WARNING:Xst:2170 - Unit fixedFloatConversion : the following signal(s) form a combinatorial loop: _old_lead_2<8>.
+WARNING:Xst:2170 - Unit fixedFloatConversion : the following signal(s) form a combinatorial loop: _old_lead_2<4>.
+WARNING:Xst:2170 - Unit fixedFloatConversion : the following signal(s) form a combinatorial loop: _old_lead_2<17>.
+WARNING:Xst:2170 - Unit fixedFloatConversion : the following signal(s) form a combinatorial loop: _old_lead_2<27>.
+WARNING:Xst:2170 - Unit fixedFloatConversion : the following signal(s) form a combinatorial loop: _old_lead_2<15>.
+WARNING:Xst:2170 - Unit fixedFloatConversion : the following signal(s) form a combinatorial loop: _old_lead_2<13>.
+WARNING:Xst:2170 - Unit fixedFloatConversion : the following signal(s) form a combinatorial loop: _old_lead_2<24>.
+WARNING:Xst:2170 - Unit fixedFloatConversion : the following signal(s) form a combinatorial loop: _old_lead_2<7>.
+WARNING:Xst:2170 - Unit fixedFloatConversion : the following signal(s) form a combinatorial loop: _old_lead_2<5>.
+WARNING:Xst:2170 - Unit fixedFloatConversion : the following signal(s) form a combinatorial loop: _old_lead_2<2>.
+WARNING:Xst:2170 - Unit fixedFloatConversion : the following signal(s) form a combinatorial loop: _old_lead_2<30>.
+WARNING:Xst:2170 - Unit fixedFloatConversion : the following signal(s) form a combinatorial loop: _old_lead_2<18>.
+WARNING:Xst:2170 - Unit fixedFloatConversion : the following signal(s) form a combinatorial loop: _old_lead_2<20>.
+WARNING:Xst:2170 - Unit fixedFloatConversion : the following signal(s) form a combinatorial loop: _old_lead_2<23>.
+WARNING:Xst:2170 - Unit fixedFloatConversion : the following signal(s) form a combinatorial loop: _old_lead_2<25>.
+WARNING:Xst:2170 - Unit fixedFloatConversion : the following signal(s) form a combinatorial loop: _old_lead_2<12>.
+WARNING:Xst:2170 - Unit fixedFloatConversion : the following signal(s) form a combinatorial loop: _old_lead_2<28>.
+WARNING:Xst:2170 - Unit fixedFloatConversion : the following signal(s) form a combinatorial loop: _old_lead_2<0>.
+WARNING:Xst:2170 - Unit fixedFloatConversion : the following signal(s) form a combinatorial loop: _old_lead_2<3>.
+WARNING:Xst:2170 - Unit fixedFloatConversion : the following signal(s) form a combinatorial loop: _old_lead_2<29>.
+WARNING:Xst:2170 - Unit fixedFloatConversion : the following signal(s) form a combinatorial loop: _old_lead_2<31>.
+WARNING:Xst:2170 - Unit fixedFloatConversion : the following signal(s) form a combinatorial loop: _old_lead_2<21>.
+WARNING:Xst:2170 - Unit fixedFloatConversion : the following signal(s) form a combinatorial loop: _old_lead_2<11>.
+WARNING:Xst:2170 - Unit fixedFloatConversion : the following signal(s) form a combinatorial loop: _old_lead_2<14>.
+
+Optimizing unit <fixedFloatConversion> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block fixedFloatConversion, actual ratio is 50.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : fixedFloatConversion.ngr
+Top Level Output File Name         : fixedFloatConversion
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 72
+
+Cell Usage :
+# BELS                             : 1109
+#      GND                         : 1
+#      INV                         : 68
+#      LUT1                        : 4
+#      LUT2                        : 42
+#      LUT3                        : 256
+#      LUT4                        : 412
+#      MUXCY                       : 124
+#      MUXF5                       : 81
+#      VCC                         : 1
+#      XORCY                       : 120
+# FlipFlops/Latches                : 32
+#      FD                          : 2
+#      FDS                         : 30
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 70
+#      IBUF                        : 38
+#      OBUF                        : 32
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100etq144-5 
+
+ Number of Slices:                      431  out of    960    44%  
+ Number of 4 input LUTs:                782  out of   1920    40%  
+ Number of IOs:                          72
+ Number of bonded IOBs:                  71  out of    108    65%  
+    IOB Flip Flops:                      32
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 32    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 23.367ns
+   Maximum output required time after clock: 4.040ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 16689211 / 62
+-------------------------------------------------------------------------
+Offset:              23.367ns (Levels of Logic = 23)
+  Source:            targetnumber<0> (PAD)
+  Destination:       result_20 (FF)
+  Destination Clock: clk rising
+
+  Data Path: targetnumber<0> to result_20
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            11   1.106   0.945  targetnumber_0_IBUF (targetnumber_0_IBUF)
+     LUT1:I0->O            1   0.612   0.000  Madd_old_target_1_addsub0000_cy<0>_rt (Madd_old_target_1_addsub0000_cy<0>_rt)
+     MUXCY:S->O            1   0.404   0.000  Madd_old_target_1_addsub0000_cy<0> (Madd_old_target_1_addsub0000_cy<0>)
+     XORCY:CI->O           1   0.699   0.387  Madd_old_target_1_addsub0000_xor<1> (old_target_1_addsub0000<1>)
+     LUT3:I2->O            6   0.612   0.572  _old_target_1<1>1 (_old_target_1<1>)
+     LUT4:I3->O            1   0.612   0.387  _old_lead_2<1>31_SW0 (N473)
+     LUT4:I2->O            1   0.612   0.426  _old_lead_2<1>31 (_old_lead_2<1>31)
+     LUT4:I1->O            1   0.612   0.426  _old_lead_2<1>67_SW0 (N349)
+     LUT4:I1->O            1   0.612   0.509  _old_lead_2<1>67 (_old_lead_2<1>67)
+     LUT4:I0->O            1   0.612   0.360  _old_lead_2<1>120_SW0 (N351)
+     LUT4:I3->O            1   0.612   0.426  _old_lead_2<1>120 (_old_lead_2<1>120)
+     LUT4:I1->O            1   0.612   0.426  _old_lead_2<1>164_SW0 (N353)
+     LUT4:I1->O            1   0.612   0.509  _old_lead_2<1>164 (_old_lead_2<1>164)
+     LUT4:I0->O            1   0.612   0.360  _old_lead_2<1>207_SW0 (N373)
+     LUT4:I3->O            1   0.612   0.387  _old_lead_2<1>207 (_old_lead_2<1>207)
+     LUT4:I2->O           40   0.612   1.227  _old_lead_2<1>244 (_old_lead_2<1>)
+     LUT3:I0->O            3   0.612   0.520  Sh8_SW0 (N280)
+     LUT3:I1->O            3   0.612   0.481  Sh8 (Sh8)
+     LUT3:I2->O            3   0.612   0.520  Sh40_SW0 (Sh4420)
+     LUT3:I1->O            1   0.612   0.000  Sh44311 (Sh4431)
+     MUXF5:I1->O           2   0.278   0.449  Sh4431_f5 (Sh44)
+     LUT2:I1->O            1   0.612   0.000  result_mux0000<20>17212 (result_mux0000<20>17211)
+     MUXF5:I0->O           1   0.278   0.000  result_mux0000<20>1721_f5 (result_mux0000<20>172)
+     FDS:D                     0.268          result_20
+    ----------------------------------------
+    Total                     23.367ns (14.049ns logic, 9.318ns route)
+                                       (60.1% logic, 39.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              4.040ns (Levels of Logic = 1)
+  Source:            result_31 (FF)
+  Destination:       result<31> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: result_31 to result<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.514   0.357  result_31 (result_31)
+     OBUF:I->O                 3.169          result_31_OBUF (result<31>)
+    ----------------------------------------
+    Total                      4.040ns (3.683ns logic, 0.357ns route)
+                                       (91.2% logic, 8.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 15.16 secs
+ 
+--> 
+
+Total memory usage is 329300 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   39 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

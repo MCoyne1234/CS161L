@@ -1,0 +1,899 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: cs161_processor.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "cs161_processor.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "cs161_processor"
+Output Format                      : NGC
+Target Device                      : xc3s1200e-5-fg320
+
+---- Source Options
+Top Module Name                    : cs161_processor
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "sign_extend.v" in library work
+Compiling verilog file "Register.v" in library work
+Module <sign_extend> compiled
+Compiling verilog file "mux_5bit.v" in library work
+Module <Register> compiled
+Compiling verilog file "mux_2_1.v" in library work
+Module <mux_5bit> compiled
+Compiling verilog file "MEMWB_Register.v" in library work
+Module <mux_2_1> compiled
+Compiling verilog file "IFID_Register.v" in library work
+Module <MEMWB_Register> compiled
+Compiling verilog file "IDEX_Register.v" in library work
+Module <IFID_Register> compiled
+Compiling verilog file "gen_register.v" in library work
+Module <IDEX_Register> compiled
+Compiling verilog file "EXMEM_Register.v" in library work
+Module <gen_register> compiled
+Compiling verilog file "cpu_registers.v" in library work
+Module <EXMEM_Register> compiled
+Compiling verilog file "cpumemory.v" in library work
+WARNING:HDLCompilers:38 - "cpumemory.v" line 6 Macro 'MAX_REG' redefined
+Module <cpu_registers> compiled
+Compiling verilog file "control_unit.v" in library work
+Module <cpumemory> compiled
+Compiling verilog file "alu_control.v" in library work
+Module <control_unit> compiled
+Compiling verilog file "alu.v" in library work
+Module <alu_control> compiled
+Compiling verilog file "Adder.v" in library work
+Module <alu> compiled
+Compiling verilog file "cs161_processor.v" in library work
+Module <Adder> compiled
+Module <cs161_processor> compiled
+No errors in compilation
+Analysis of file <"cs161_processor.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <cs161_processor> in library <work>.
+
+Analyzing hierarchy for module <gen_register> in library <work> with parameters.
+	WORD_SIZE = "00000000000000000000000000100000"
+
+Analyzing hierarchy for module <cpumemory> in library <work>.
+
+Analyzing hierarchy for module <control_unit> in library <work>.
+
+Analyzing hierarchy for module <mux_5bit> in library <work> with parameters.
+	WORD_SIZE = "00000000000000000000000000000101"
+
+Analyzing hierarchy for module <cpu_registers> in library <work>.
+
+Analyzing hierarchy for module <sign_extend> in library <work>.
+
+Analyzing hierarchy for module <Adder> in library <work>.
+
+Analyzing hierarchy for module <mux_2_1> in library <work> with parameters.
+	WORD_SIZE = "00000000000000000000000000100000"
+
+Analyzing hierarchy for module <alu_control> in library <work>.
+
+Analyzing hierarchy for module <alu> in library <work>.
+
+Analyzing hierarchy for module <IFID_Register> in library <work>.
+
+Analyzing hierarchy for module <Register> in library <work> with parameters.
+	WORD_SIZE = "00000000000000000000000000000001"
+
+Analyzing hierarchy for module <IDEX_Register> in library <work>.
+
+Analyzing hierarchy for module <EXMEM_Register> in library <work>.
+
+Analyzing hierarchy for module <MEMWB_Register> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <cs161_processor>.
+Module <cs161_processor> is correct for synthesis.
+ 
+Analyzing module <gen_register> in library <work>.
+	WORD_SIZE = 32'sb00000000000000000000000000100000
+Module <gen_register> is correct for synthesis.
+ 
+Analyzing module <cpumemory> in library <work>.
+INFO:Xst:2546 - "cpumemory.v" line 45: reading initialization file "init5.coe".
+Module <cpumemory> is correct for synthesis.
+ 
+Analyzing module <control_unit> in library <work>.
+Module <control_unit> is correct for synthesis.
+ 
+Analyzing module <mux_5bit> in library <work>.
+	WORD_SIZE = 32'sb00000000000000000000000000000101
+Module <mux_5bit> is correct for synthesis.
+ 
+Analyzing module <cpu_registers> in library <work>.
+Module <cpu_registers> is correct for synthesis.
+ 
+Analyzing module <sign_extend> in library <work>.
+Module <sign_extend> is correct for synthesis.
+ 
+Analyzing module <Adder> in library <work>.
+Module <Adder> is correct for synthesis.
+ 
+Analyzing module <mux_2_1> in library <work>.
+	WORD_SIZE = 32'sb00000000000000000000000000100000
+Module <mux_2_1> is correct for synthesis.
+ 
+Analyzing module <alu_control> in library <work>.
+Module <alu_control> is correct for synthesis.
+ 
+Analyzing module <alu> in library <work>.
+Module <alu> is correct for synthesis.
+ 
+Analyzing module <IFID_Register> in library <work>.
+Module <IFID_Register> is correct for synthesis.
+ 
+Analyzing module <Register> in library <work>.
+	WORD_SIZE = 32'sb00000000000000000000000000000001
+Module <Register> is correct for synthesis.
+ 
+Analyzing module <IDEX_Register> in library <work>.
+Module <IDEX_Register> is correct for synthesis.
+ 
+Analyzing module <EXMEM_Register> in library <work>.
+Module <EXMEM_Register> is correct for synthesis.
+ 
+Analyzing module <MEMWB_Register> in library <work>.
+Module <MEMWB_Register> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <i> in unit <cpu_registers> has a constant value of 100000 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <gen_register>.
+    Related source file is "gen_register.v".
+WARNING:Xst:2474 - Clock and clock enable of register <data_out> are driven by the same logic. The clock enable is removed.
+    Found 32-bit register for signal <data_out>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <gen_register> synthesized.
+
+
+Synthesizing Unit <cpumemory>.
+    Related source file is "cpumemory.v".
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 256x32-bit dual-port RAM <Mram_buff> for signal <buff>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <cpumemory> synthesized.
+
+
+Synthesizing Unit <control_unit>.
+    Related source file is "control_unit.v".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg_dst>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_src>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_to_reg>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg_write>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_read>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_write>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <branch>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 2-bit latch for signal <alu_op>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+Unit <control_unit> synthesized.
+
+
+Synthesizing Unit <mux_5bit>.
+    Related source file is "mux_5bit.v".
+Unit <mux_5bit> synthesized.
+
+
+Synthesizing Unit <cpu_registers>.
+    Related source file is "cpu_registers.v".
+    Found 32-bit 32-to-1 multiplexer for signal <read_data_1>.
+    Found 32-bit 32-to-1 multiplexer for signal <read_data_2>.
+    Found 1024-bit register for signal <RFILE>.
+INFO:Xst:738 - HDL ADVISOR - 1024 flip-flops were inferred for signal <RFILE>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred 1024 D-type flip-flop(s).
+	inferred  64 Multiplexer(s).
+Unit <cpu_registers> synthesized.
+
+
+Synthesizing Unit <sign_extend>.
+    Related source file is "sign_extend.v".
+Unit <sign_extend> synthesized.
+
+
+Synthesizing Unit <Adder>.
+    Related source file is "Adder.v".
+    Found 32-bit adder for signal <data_out>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Adder> synthesized.
+
+
+Synthesizing Unit <mux_2_1>.
+    Related source file is "mux_2_1.v".
+Unit <mux_2_1> synthesized.
+
+
+Synthesizing Unit <alu_control>.
+    Related source file is "alu_control.v".
+WARNING:Xst:1780 - Signal <c_alu_out> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 4-bit latch for signal <alu_out>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 4-bit 4-to-1 multiplexer for signal <alu_out$mux0000>.
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <alu_control> synthesized.
+
+
+Synthesizing Unit <alu>.
+    Related source file is "alu.v".
+WARNING:Xst:646 - Signal <temp> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit addsub for signal <old_temp_1$addsub0000>.
+    Found 32-bit comparator less for signal <old_temp_1$cmp_lt0000> created at line 44.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <alu> synthesized.
+
+
+Synthesizing Unit <IFID_Register>.
+    Related source file is "IFID_Register.v".
+    Found 32-bit register for signal <instrOut>.
+    Found 32-bit register for signal <pcplus_4>.
+    Summary:
+	inferred  64 D-type flip-flop(s).
+Unit <IFID_Register> synthesized.
+
+
+Synthesizing Unit <Register>.
+    Related source file is "Register.v".
+WARNING:Xst:2110 - Clock of register <data_out_0> seems to be also used in the data or control logic of that element.
+    Found 1-bit register for signal <data_out<0>>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <Register> synthesized.
+
+
+Synthesizing Unit <IDEX_Register>.
+    Related source file is "IDEX_Register.v".
+WARNING:Xst:2474 - Clock and clock enable of register <mem_read_IDEX_O> are driven by the same logic. The clock enable is removed.
+WARNING:Xst:2474 - Clock and clock enable of register <mem_to_reg_IDEX_O> are driven by the same logic. The clock enable is removed.
+WARNING:Xst:2474 - Clock and clock enable of register <mem_write_IDEX_O> are driven by the same logic. The clock enable is removed.
+WARNING:Xst:2474 - Clock and clock enable of register <reg_write_IDEX_O> are driven by the same logic. The clock enable is removed.
+WARNING:Xst:2474 - Clock and clock enable of register <alu_src_IDEX_O> are driven by the same logic. The clock enable is removed.
+WARNING:Xst:2474 - Clock and clock enable of register <alu_op_IDEX_O> are driven by the same logic. The clock enable is removed.
+WARNING:Xst:2474 - Clock and clock enable of register <reg_dst_IDEX_O> are driven by the same logic. The clock enable is removed.
+WARNING:Xst:2474 - Clock and clock enable of register <pcplus4_O> are driven by the same logic. The clock enable is removed.
+WARNING:Xst:2474 - Clock and clock enable of register <reg1_O> are driven by the same logic. The clock enable is removed.
+WARNING:Xst:2474 - Clock and clock enable of register <reg2_O> are driven by the same logic. The clock enable is removed.
+WARNING:Xst:2474 - Clock and clock enable of register <signextended_O> are driven by the same logic. The clock enable is removed.
+WARNING:Xst:2474 - Clock and clock enable of register <instr20_16_O> are driven by the same logic. The clock enable is removed.
+WARNING:Xst:2474 - Clock and clock enable of register <instr15_11_O> are driven by the same logic. The clock enable is removed.
+    Found 5-bit register for signal <instr20_16_O>.
+    Found 32-bit register for signal <pcplus4_O>.
+    Found 32-bit register for signal <signextended_O>.
+    Found 1-bit register for signal <mem_write_IDEX_O>.
+    Found 2-bit register for signal <alu_op_IDEX_O>.
+    Found 1-bit register for signal <alu_src_IDEX_O>.
+    Found 32-bit register for signal <reg1_O>.
+    Found 5-bit register for signal <instr15_11_O>.
+    Found 1-bit register for signal <reg_write_IDEX_O>.
+    Found 32-bit register for signal <reg2_O>.
+    Found 1-bit register for signal <mem_read_IDEX_O>.
+    Found 1-bit register for signal <mem_to_reg_IDEX_O>.
+    Found 1-bit register for signal <reg_dst_IDEX_O>.
+    Summary:
+	inferred 146 D-type flip-flop(s).
+Unit <IDEX_Register> synthesized.
+
+
+Synthesizing Unit <EXMEM_Register>.
+    Related source file is "EXMEM_Register.v".
+    Found 1-bit register for signal <memwrite_O>.
+    Found 5-bit register for signal <regdst_O>.
+    Found 32-bit register for signal <aluresult_O>.
+    Found 1-bit register for signal <mem2reg_O>.
+    Found 1-bit register for signal <regwrite_O>.
+    Found 1-bit register for signal <memread_O>.
+    Found 32-bit register for signal <add_pc_offset_O>.
+    Found 32-bit register for signal <readdata2_O>.
+    Found 1-bit register for signal <zero_O>.
+    Summary:
+	inferred 106 D-type flip-flop(s).
+Unit <EXMEM_Register> synthesized.
+
+
+Synthesizing Unit <MEMWB_Register>.
+    Related source file is "MEMWB_Register.v".
+    Found 5-bit register for signal <regdst_O>.
+    Found 32-bit register for signal <aluresult_O>.
+    Found 32-bit register for signal <mem_read_data_O>.
+    Found 1-bit register for signal <mem2reg_O>.
+    Found 1-bit register for signal <regwrite_O>.
+    Summary:
+	inferred  71 D-type flip-flop(s).
+Unit <MEMWB_Register> synthesized.
+
+
+Synthesizing Unit <cs161_processor>.
+    Related source file is "cs161_processor.v".
+WARNING:Xst:646 - Signal <mem_read_EXMEM> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit adder for signal <pc_plus4>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <cs161_processor> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 256x32-bit dual-port RAM                              : 1
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 1
+# Registers                                            : 64
+ 1-bit register                                        : 15
+ 2-bit register                                        : 1
+ 32-bit register                                       : 44
+ 5-bit register                                        : 4
+# Latches                                              : 9
+ 1-bit latch                                           : 7
+ 2-bit latch                                           : 1
+ 4-bit latch                                           : 1
+# Comparators                                          : 1
+ 32-bit comparator less                                : 1
+# Multiplexers                                         : 3
+ 32-bit 32-to-1 multiplexer                            : 2
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <cpumemory>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_buff> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 32-bit                   |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <data_mem_write> | high     |
+    |     addrA          | connected to signal <data_address>  |          |
+    |     diA            | connected to signal <data_write_data> |          |
+    |     doA            | connected to signal <data_read_data> |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 256-word x 32-bit                   |          |
+    |     addrB          | connected to signal <instr_read_address> |          |
+    |     doB            | connected to signal <instr_instruction> |          |
+    -----------------------------------------------------------------------
+Unit <cpumemory> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 256x32-bit dual-port distributed RAM                  : 1
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 1
+# Registers                                            : 1445
+ Flip-Flops                                            : 1445
+# Latches                                              : 9
+ 1-bit latch                                           : 7
+ 2-bit latch                                           : 1
+ 4-bit latch                                           : 1
+# Comparators                                          : 1
+ 32-bit comparator less                                : 1
+# Multiplexers                                         : 65
+ 1-bit 32-to-1 multiplexer                             : 64
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <instr15_11_O_4> in Unit <IDEX_Register> is equivalent to the following 17 FFs/Latches, which will be removed : <signextended_O_15> <signextended_O_16> <signextended_O_17> <signextended_O_18> <signextended_O_19> <signextended_O_20> <signextended_O_21> <signextended_O_22> <signextended_O_23> <signextended_O_24> <signextended_O_25> <signextended_O_26> <signextended_O_27> <signextended_O_28> <signextended_O_29> <signextended_O_30> <signextended_O_31> 
+INFO:Xst:2261 - The FF/Latch <instr15_11_O_0> in Unit <IDEX_Register> is equivalent to the following FF/Latch, which will be removed : <signextended_O_11> 
+INFO:Xst:2261 - The FF/Latch <instr15_11_O_1> in Unit <IDEX_Register> is equivalent to the following FF/Latch, which will be removed : <signextended_O_12> 
+INFO:Xst:2261 - The FF/Latch <instr15_11_O_2> in Unit <IDEX_Register> is equivalent to the following FF/Latch, which will be removed : <signextended_O_13> 
+INFO:Xst:2261 - The FF/Latch <instr15_11_O_3> in Unit <IDEX_Register> is equivalent to the following FF/Latch, which will be removed : <signextended_O_14> 
+INFO:Xst:2261 - The FF/Latch <branch> in Unit <control_unit> is equivalent to the following FF/Latch, which will be removed : <alu_op_0> 
+
+Optimizing unit <cs161_processor> ...
+
+Optimizing unit <gen_register> ...
+
+Optimizing unit <cpu_registers> ...
+
+Optimizing unit <alu> ...
+
+Optimizing unit <IFID_Register> ...
+
+Optimizing unit <IDEX_Register> ...
+
+Optimizing unit <EXMEM_Register> ...
+
+Optimizing unit <MEMWB_Register> ...
+
+Optimizing unit <control_unit> ...
+
+Optimizing unit <alu_control> ...
+WARNING:Xst:2677 - Node <IDEX_Reg/mem_read_IDEX_O> of sequential type is unconnected in block <cs161_processor>.
+WARNING:Xst:2677 - Node <EXMEM_Reg/memread_O> of sequential type is unconnected in block <cs161_processor>.
+WARNING:Xst:2677 - Node <control_unit/mem_read> of sequential type is unconnected in block <cs161_processor>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block cs161_processor, actual ratio is 19.
+FlipFlop IDEX_Reg/alu_src_IDEX_O has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <cs161_processor> :
+	Found 2-bit shift register for signal <MEMWB_Reg/regdst_O_4>.
+	Found 2-bit shift register for signal <MEMWB_Reg/regdst_O_3>.
+	Found 2-bit shift register for signal <MEMWB_Reg/regdst_O_2>.
+	Found 2-bit shift register for signal <MEMWB_Reg/regdst_O_1>.
+	Found 2-bit shift register for signal <MEMWB_Reg/regdst_O_0>.
+	Found 2-bit shift register for signal <MEMWB_Reg/regwrite_O>.
+	Found 2-bit shift register for signal <MEMWB_Reg/mem2reg_O>.
+Unit <cs161_processor> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1410
+ Flip-Flops                                            : 1410
+# Shift Registers                                      : 7
+ 2-bit shift register                                  : 7
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : cs161_processor.ngr
+Top Level Output File Name         : cs161_processor
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 151
+
+Cell Usage :
+# BELS                             : 3643
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 28
+#      LUT2                        : 61
+#      LUT3                        : 1671
+#      LUT3_D                      : 32
+#      LUT3_L                      : 1
+#      LUT4                        : 165
+#      LUT4_D                      : 25
+#      LUT4_L                      : 10
+#      MUXCY                       : 129
+#      MUXF5                       : 786
+#      MUXF6                       : 384
+#      MUXF7                       : 192
+#      MUXF8                       : 64
+#      VCC                         : 1
+#      XORCY                       : 92
+# FlipFlops/Latches                : 1428
+#      FD                          : 233
+#      FDC                         : 30
+#      FDCE                        : 4
+#      FDR                         : 126
+#      FDRE                        : 1024
+#      LD                          : 10
+#      LD_1                        : 1
+# RAMS                             : 512
+#      RAM16X1D                    : 512
+# Shift Registers                  : 7
+#      SRL16                       : 7
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 151
+#      IBUF                        : 2
+#      OBUF                        : 149
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1200efg320-5 
+
+ Number of Slices:                     1730  out of   8672    19%  
+ Number of Slice Flip Flops:           1428  out of  17344     8%  
+ Number of 4 input LUTs:               3025  out of  17344    17%  
+    Number used as logic:              1994
+    Number used as Shift registers:       7
+    Number used as RAMs:               1024
+ Number of IOs:                         151
+ Number of bonded IOBs:                 151  out of    250    60%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------------------------------+---------------------------------+-------+
+Clock Signal                                                       | Clock buffer(FF name)           | Load  |
+-------------------------------------------------------------------+---------------------------------+-------+
+clk                                                                | IBUF+BUFG                       | 1936  |
+control_unit/alu_src_not0001(control_unit/alu_src_not000137:O)     | NONE(*)(control_unit/alu_op_1)  | 5     |
+rst                                                                | IBUF+BUFG                       | 1     |
+control_unit/mem_to_reg_not0001(control_unit/mem_to_reg_not00011:O)| NONE(*)(control_unit/mem_to_reg)| 1     |
+alu_control/alu_out_not0001(alu_control/alu_out_not000149:O)       | NONE(*)(alu_control/alu_out_3)  | 4     |
+-------------------------------------------------------------------+---------------------------------+-------+
+(*) These 3 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst                                | IBUF                   | 34    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 8.558ns (Maximum Frequency: 116.852MHz)
+   Minimum input arrival time before clock: 3.337ns
+   Maximum output required time after clock: 8.590ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 8.558ns (frequency: 116.852MHz)
+  Total number of paths / destination ports: 41162 / 7560
+-------------------------------------------------------------------------
+Delay:               8.558ns (Levels of Logic = 37)
+  Source:            IDEX_Reg/alu_src_IDEX_O_1 (FF)
+  Destination:       EXMEM_Reg/zero_O (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: IDEX_Reg/alu_src_IDEX_O_1 to EXMEM_Reg/zero_O
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             16   0.514   0.909  IDEX_Reg/alu_src_IDEX_O_1 (IDEX_Reg/alu_src_IDEX_O_1)
+     LUT3_D:I2->O          2   0.612   0.410  MUX_ALUsrc/data_out<0>1 (ALUsrc_mux<0>)
+     LUT3:I2->O            1   0.612   0.000  alu/Maddsub_old_temp_1_addsub0000_lut<0> (alu/Maddsub_old_temp_1_addsub0000_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  alu/Maddsub_old_temp_1_addsub0000_cy<0> (alu/Maddsub_old_temp_1_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  alu/Maddsub_old_temp_1_addsub0000_cy<1> (alu/Maddsub_old_temp_1_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  alu/Maddsub_old_temp_1_addsub0000_cy<2> (alu/Maddsub_old_temp_1_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  alu/Maddsub_old_temp_1_addsub0000_cy<3> (alu/Maddsub_old_temp_1_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  alu/Maddsub_old_temp_1_addsub0000_cy<4> (alu/Maddsub_old_temp_1_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  alu/Maddsub_old_temp_1_addsub0000_cy<5> (alu/Maddsub_old_temp_1_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  alu/Maddsub_old_temp_1_addsub0000_cy<6> (alu/Maddsub_old_temp_1_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  alu/Maddsub_old_temp_1_addsub0000_cy<7> (alu/Maddsub_old_temp_1_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  alu/Maddsub_old_temp_1_addsub0000_cy<8> (alu/Maddsub_old_temp_1_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  alu/Maddsub_old_temp_1_addsub0000_cy<9> (alu/Maddsub_old_temp_1_addsub0000_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  alu/Maddsub_old_temp_1_addsub0000_cy<10> (alu/Maddsub_old_temp_1_addsub0000_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  alu/Maddsub_old_temp_1_addsub0000_cy<11> (alu/Maddsub_old_temp_1_addsub0000_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  alu/Maddsub_old_temp_1_addsub0000_cy<12> (alu/Maddsub_old_temp_1_addsub0000_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  alu/Maddsub_old_temp_1_addsub0000_cy<13> (alu/Maddsub_old_temp_1_addsub0000_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  alu/Maddsub_old_temp_1_addsub0000_cy<14> (alu/Maddsub_old_temp_1_addsub0000_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  alu/Maddsub_old_temp_1_addsub0000_cy<15> (alu/Maddsub_old_temp_1_addsub0000_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  alu/Maddsub_old_temp_1_addsub0000_cy<16> (alu/Maddsub_old_temp_1_addsub0000_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  alu/Maddsub_old_temp_1_addsub0000_cy<17> (alu/Maddsub_old_temp_1_addsub0000_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  alu/Maddsub_old_temp_1_addsub0000_cy<18> (alu/Maddsub_old_temp_1_addsub0000_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  alu/Maddsub_old_temp_1_addsub0000_cy<19> (alu/Maddsub_old_temp_1_addsub0000_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  alu/Maddsub_old_temp_1_addsub0000_cy<20> (alu/Maddsub_old_temp_1_addsub0000_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  alu/Maddsub_old_temp_1_addsub0000_cy<21> (alu/Maddsub_old_temp_1_addsub0000_cy<21>)
+     MUXCY:CI->O           1   0.051   0.000  alu/Maddsub_old_temp_1_addsub0000_cy<22> (alu/Maddsub_old_temp_1_addsub0000_cy<22>)
+     MUXCY:CI->O           1   0.052   0.000  alu/Maddsub_old_temp_1_addsub0000_cy<23> (alu/Maddsub_old_temp_1_addsub0000_cy<23>)
+     MUXCY:CI->O           1   0.052   0.000  alu/Maddsub_old_temp_1_addsub0000_cy<24> (alu/Maddsub_old_temp_1_addsub0000_cy<24>)
+     MUXCY:CI->O           1   0.052   0.000  alu/Maddsub_old_temp_1_addsub0000_cy<25> (alu/Maddsub_old_temp_1_addsub0000_cy<25>)
+     MUXCY:CI->O           1   0.052   0.000  alu/Maddsub_old_temp_1_addsub0000_cy<26> (alu/Maddsub_old_temp_1_addsub0000_cy<26>)
+     MUXCY:CI->O           1   0.052   0.000  alu/Maddsub_old_temp_1_addsub0000_cy<27> (alu/Maddsub_old_temp_1_addsub0000_cy<27>)
+     MUXCY:CI->O           1   0.052   0.000  alu/Maddsub_old_temp_1_addsub0000_cy<28> (alu/Maddsub_old_temp_1_addsub0000_cy<28>)
+     MUXCY:CI->O           1   0.052   0.000  alu/Maddsub_old_temp_1_addsub0000_cy<29> (alu/Maddsub_old_temp_1_addsub0000_cy<29>)
+     MUXCY:CI->O           0   0.052   0.000  alu/Maddsub_old_temp_1_addsub0000_cy<30> (alu/Maddsub_old_temp_1_addsub0000_cy<30>)
+     XORCY:CI->O           1   0.699   0.360  alu/Maddsub_old_temp_1_addsub0000_xor<31> (alu/old_temp_1_addsub0000<31>)
+     LUT4_D:I3->O          1   0.612   0.360  alu/_old_temp_1<31>34 (alu/_old_temp_1<31>34)
+     LUT4:I3->O            1   0.612   0.000  alu/zero_out_cmp_eq0000_wg_lut<7> (alu/zero_out_cmp_eq0000_wg_lut<7>)
+     MUXCY:S->O            1   0.641   0.000  alu/zero_out_cmp_eq0000_wg_cy<7> (alu/zero_out_cmp_eq0000_wg_cy<7>)
+     FD:D                      0.268          EXMEM_Reg/zero_O
+    ----------------------------------------
+    Total                      8.558ns (6.519ns logic, 2.039ns route)
+                                       (76.2% logic, 23.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'rst'
+  Clock period: 1.917ns (frequency: 521.662MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.917ns (Levels of Logic = 1)
+  Source:            control_unit/reg_dst (LATCH)
+  Destination:       control_unit/reg_dst (LATCH)
+  Source Clock:      rst rising
+  Destination Clock: rst rising
+
+  Data Path: control_unit/reg_dst to control_unit/reg_dst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD_1:G->Q             2   0.588   0.449  control_unit/reg_dst (control_unit/reg_dst)
+     LUT4:I1->O            1   0.612   0.000  control_unit/reg_dst_mux00001 (control_unit/reg_dst_mux0000)
+     LD_1:D                    0.268          control_unit/reg_dst
+    ----------------------------------------
+    Total                      1.917ns (1.468ns logic, 0.449ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 1152 / 1152
+-------------------------------------------------------------------------
+Offset:              3.100ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       Register/RFILE_31_31 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to Register/RFILE_31_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1193   1.106   1.198  rst_IBUF (rst_IBUF1)
+     FDRE:R                    0.795          Register/RFILE_2_0
+    ----------------------------------------
+    Total                      3.100ns (1.901ns logic, 1.198ns route)
+                                       (61.3% logic, 38.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'control_unit/alu_src_not0001'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              3.337ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       control_unit/alu_op_1 (LATCH)
+  Destination Clock: control_unit/alu_src_not0001 falling
+
+  Data Path: rst to control_unit/alu_op_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1193   1.106   1.350  rst_IBUF (rst_IBUF1)
+     LUT4:I0->O            1   0.612   0.000  control_unit/mem_write_mux0000 (control_unit/mem_write_mux0000)
+     LD:D                      0.268          control_unit/mem_write
+    ----------------------------------------
+    Total                      3.337ns (1.986ns logic, 1.350ns route)
+                                       (59.5% logic, 40.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'control_unit/mem_to_reg_not0001'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.337ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       control_unit/mem_to_reg (LATCH)
+  Destination Clock: control_unit/mem_to_reg_not0001 falling
+
+  Data Path: rst to control_unit/mem_to_reg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1193   1.106   1.350  rst_IBUF (rst_IBUF1)
+     LUT4:I0->O            1   0.612   0.000  control_unit/mem_read_mux0000 (control_unit/mem_read_mux0000)
+     LD:D                      0.268          control_unit/mem_to_reg
+    ----------------------------------------
+    Total                      3.337ns (1.986ns logic, 1.350ns route)
+                                       (59.5% logic, 40.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 6130 / 149
+-------------------------------------------------------------------------
+Offset:              8.590ns (Levels of Logic = 31)
+  Source:            PC/data_out_3 (FF)
+  Destination:       prog_count<31> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: PC/data_out_3 to prog_count<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q            513   0.514   1.351  PC/data_out_3 (PC/data_out_3)
+     LUT1:I0->O            1   0.612   0.000  Madd_pc_plus4_cy<3>_rt (Madd_pc_plus4_cy<3>_rt)
+     MUXCY:S->O            1   0.404   0.000  Madd_pc_plus4_cy<3> (Madd_pc_plus4_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pc_plus4_cy<4> (Madd_pc_plus4_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pc_plus4_cy<5> (Madd_pc_plus4_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pc_plus4_cy<6> (Madd_pc_plus4_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pc_plus4_cy<7> (Madd_pc_plus4_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pc_plus4_cy<8> (Madd_pc_plus4_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pc_plus4_cy<9> (Madd_pc_plus4_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pc_plus4_cy<10> (Madd_pc_plus4_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pc_plus4_cy<11> (Madd_pc_plus4_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pc_plus4_cy<12> (Madd_pc_plus4_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pc_plus4_cy<13> (Madd_pc_plus4_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pc_plus4_cy<14> (Madd_pc_plus4_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pc_plus4_cy<15> (Madd_pc_plus4_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pc_plus4_cy<16> (Madd_pc_plus4_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pc_plus4_cy<17> (Madd_pc_plus4_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pc_plus4_cy<18> (Madd_pc_plus4_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pc_plus4_cy<19> (Madd_pc_plus4_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pc_plus4_cy<20> (Madd_pc_plus4_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pc_plus4_cy<21> (Madd_pc_plus4_cy<21>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pc_plus4_cy<22> (Madd_pc_plus4_cy<22>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pc_plus4_cy<23> (Madd_pc_plus4_cy<23>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pc_plus4_cy<24> (Madd_pc_plus4_cy<24>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pc_plus4_cy<25> (Madd_pc_plus4_cy<25>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pc_plus4_cy<26> (Madd_pc_plus4_cy<26>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pc_plus4_cy<27> (Madd_pc_plus4_cy<27>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pc_plus4_cy<28> (Madd_pc_plus4_cy<28>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pc_plus4_cy<29> (Madd_pc_plus4_cy<29>)
+     MUXCY:CI->O           0   0.051   0.000  Madd_pc_plus4_cy<30> (Madd_pc_plus4_cy<30>)
+     XORCY:CI->O           3   0.699   0.451  Madd_pc_plus4_xor<31> (prog_count_31_OBUF)
+     OBUF:I->O                 3.169          prog_count_31_OBUF (prog_count<31>)
+    ----------------------------------------
+    Total                      8.590ns (6.789ns logic, 1.802ns route)
+                                       (79.0% logic, 21.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 18.18 secs
+ 
+--> 
+
+Total memory usage is 375800 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   33 (   0 filtered)
+Number of infos    :   20 (   0 filtered)
+

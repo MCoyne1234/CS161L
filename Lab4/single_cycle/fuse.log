@@ -1,0 +1,40 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o D:/UCR/2019 Spring/CS161L/Lab4/single_cycle/cs161_processor_testbench_isim_beh.exe -prj D:/UCR/2019 Spring/CS161L/Lab4/single_cycle/cs161_processor_testbench_beh.prj work.cs161_processor_testbench work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/UCR/2019 Spring/CS161L/Lab4/single_cycle/../turnin/mux_2_1_5bit.v" into library work
+Analyzing Verilog file "D:/UCR/2019 Spring/CS161L/Lab4/single_cycle/adder.v" into library work
+Analyzing Verilog file "D:/UCR/2019 Spring/CS161L/Lab4/single_cycle/../given_files/sign_extend.v" into library work
+Analyzing Verilog file "D:/UCR/2019 Spring/CS161L/Lab4/single_cycle/../given_files/mux_2_1.v" into library work
+Analyzing Verilog file "D:/UCR/2019 Spring/CS161L/Lab4/single_cycle/../given_files/gen_register.v" into library work
+Analyzing Verilog file "D:/UCR/2019 Spring/CS161L/Lab4/single_cycle/../given_files/cpu_registers.v" into library work
+Analyzing Verilog file "D:/UCR/2019 Spring/CS161L/Lab4/single_cycle/../given_files/cpumemory.v" into library work
+Analyzing Verilog file "D:/UCR/2019 Spring/CS161L/Lab4/single_cycle/../given_files/alu.v" into library work
+Analyzing Verilog file "D:/UCR/2019 Spring/CS161L/Lab4/single_cycle/../../Lab3/turnin/control_unit.v" into library work
+Analyzing Verilog file "D:/UCR/2019 Spring/CS161L/Lab4/single_cycle/../../Lab3/datapath/alu_control.v" into library work
+Analyzing Verilog file "D:/UCR/2019 Spring/CS161L/Lab4/single_cycle/../given_files/processor.v" into library work
+WARNING:HDLCompiler:370 - "D:/UCR/2019 Spring/CS161L/Lab4/single_cycle/../given_files/processor.v" Line 16: Empty port in module declaration
+Analyzing Verilog file "D:/UCR/2019 Spring/CS161L/Lab4/single_cycle/../given_files/processor_tb.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module gen_register
+Compiling module cpumemory
+Compiling module control_unit
+Compiling module mux_2_1_5bit
+Compiling module cpu_registers
+Compiling module sign_extend
+Compiling module adder
+Compiling module mux_2_1
+Compiling module alu_control
+Compiling module alu
+Compiling module cs161_processor
+Compiling module cs161_processor_testbench
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\cs161_processor_testbench_isim_beh.exe.sim\libPortability.dll".
+Compiled 13 Verilog Units
+Built simulation executable D:/UCR/2019 Spring/CS161L/Lab4/single_cycle/cs161_processor_testbench_isim_beh.exe
+Fuse Memory Usage: 27752 KB
+Fuse CPU Usage: 453 ms

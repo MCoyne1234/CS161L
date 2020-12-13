@@ -1,0 +1,29 @@
+Command line:
+   BCAM_Cell_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51238
+
+Mon May 27 02:25:34 2019
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 845.84 Meg
+
+ Total Signals          : 19
+ Total Nets             : 20
+ Total Signal Drivers   : 6
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 9
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 102
+Total Line Count : 19
+
+ Total Simulation Time: 0.078125 sec
+
+ Current Memory Usage: 845.84 Meg
+
+Mon May 27 02:25:39 2019
+

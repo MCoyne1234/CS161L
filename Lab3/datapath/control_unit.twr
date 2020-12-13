@@ -1,0 +1,228 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml control_unit.twx control_unit.ncd -o control_unit.twr
+control_unit.pcf
+
+Design file:              control_unit.ncd
+Physical constraint file: control_unit.pcf
+Device,package,speed:     xc3s100e,tq144,-5 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock instr_op<0> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+alu_op<0>   |    7.537(F)|reg_dst_r_not0001 |   0.000|
+alu_op<1>   |    7.769(F)|reg_dst_r_not0001 |   0.000|
+alu_src     |    7.584(F)|reg_dst_r_not0001 |   0.000|
+branch      |    7.537(F)|reg_dst_r_not0001 |   0.000|
+mem_read    |    7.504(F)|reg_dst_r_not0001 |   0.000|
+mem_to_reg  |    7.504(F)|reg_dst_r_not0001 |   0.000|
+mem_write   |    7.985(F)|reg_dst_r_not0001 |   0.000|
+reg_dst     |    7.769(F)|reg_dst_r_not0001 |   0.000|
+reg_write   |    7.584(F)|reg_dst_r_not0001 |   0.000|
+------------+------------+------------------+--------+
+
+Clock instr_op<1> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+alu_op<0>   |    7.331(F)|reg_dst_r_not0001 |   0.000|
+alu_op<1>   |    7.563(F)|reg_dst_r_not0001 |   0.000|
+alu_src     |    7.378(F)|reg_dst_r_not0001 |   0.000|
+branch      |    7.331(F)|reg_dst_r_not0001 |   0.000|
+mem_read    |    7.298(F)|reg_dst_r_not0001 |   0.000|
+mem_to_reg  |    7.298(F)|reg_dst_r_not0001 |   0.000|
+mem_write   |    7.779(F)|reg_dst_r_not0001 |   0.000|
+reg_dst     |    7.563(F)|reg_dst_r_not0001 |   0.000|
+reg_write   |    7.378(F)|reg_dst_r_not0001 |   0.000|
+------------+------------+------------------+--------+
+
+Clock instr_op<2> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+alu_op<0>   |    7.802(F)|reg_dst_r_not0001 |   0.000|
+alu_op<1>   |    8.034(F)|reg_dst_r_not0001 |   0.000|
+alu_src     |    7.849(F)|reg_dst_r_not0001 |   0.000|
+branch      |    7.802(F)|reg_dst_r_not0001 |   0.000|
+mem_read    |    7.769(F)|reg_dst_r_not0001 |   0.000|
+mem_to_reg  |    7.769(F)|reg_dst_r_not0001 |   0.000|
+mem_write   |    8.250(F)|reg_dst_r_not0001 |   0.000|
+reg_dst     |    8.034(F)|reg_dst_r_not0001 |   0.000|
+reg_write   |    7.849(F)|reg_dst_r_not0001 |   0.000|
+------------+------------+------------------+--------+
+
+Clock instr_op<3> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+alu_op<0>   |    7.446(F)|reg_dst_r_not0001 |   0.000|
+alu_op<1>   |    7.678(F)|reg_dst_r_not0001 |   0.000|
+alu_src     |    7.493(F)|reg_dst_r_not0001 |   0.000|
+branch      |    7.446(F)|reg_dst_r_not0001 |   0.000|
+mem_read    |    7.413(F)|reg_dst_r_not0001 |   0.000|
+mem_to_reg  |    7.413(F)|reg_dst_r_not0001 |   0.000|
+mem_write   |    7.894(F)|reg_dst_r_not0001 |   0.000|
+reg_dst     |    7.678(F)|reg_dst_r_not0001 |   0.000|
+reg_write   |    7.493(F)|reg_dst_r_not0001 |   0.000|
+------------+------------+------------------+--------+
+
+Clock instr_op<4> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+alu_op<0>   |    7.643(F)|reg_dst_r_not0001 |   0.000|
+alu_op<1>   |    7.875(F)|reg_dst_r_not0001 |   0.000|
+alu_src     |    7.690(F)|reg_dst_r_not0001 |   0.000|
+branch      |    7.643(F)|reg_dst_r_not0001 |   0.000|
+mem_read    |    7.610(F)|reg_dst_r_not0001 |   0.000|
+mem_to_reg  |    7.610(F)|reg_dst_r_not0001 |   0.000|
+mem_write   |    8.091(F)|reg_dst_r_not0001 |   0.000|
+reg_dst     |    7.875(F)|reg_dst_r_not0001 |   0.000|
+reg_write   |    7.690(F)|reg_dst_r_not0001 |   0.000|
+------------+------------+------------------+--------+
+
+Clock instr_op<5> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+alu_op<0>   |    7.625(F)|reg_dst_r_not0001 |   0.000|
+alu_op<1>   |    7.857(F)|reg_dst_r_not0001 |   0.000|
+alu_src     |    7.672(F)|reg_dst_r_not0001 |   0.000|
+branch      |    7.625(F)|reg_dst_r_not0001 |   0.000|
+mem_read    |    7.592(F)|reg_dst_r_not0001 |   0.000|
+mem_to_reg  |    7.592(F)|reg_dst_r_not0001 |   0.000|
+mem_write   |    8.073(F)|reg_dst_r_not0001 |   0.000|
+reg_dst     |    7.857(F)|reg_dst_r_not0001 |   0.000|
+reg_write   |    7.672(F)|reg_dst_r_not0001 |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock instr_op<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+instr_op<0>    |         |         |    1.713|    1.713|
+instr_op<1>    |         |         |    1.507|    1.507|
+instr_op<2>    |         |         |    1.978|    1.978|
+instr_op<3>    |         |         |    1.338|    1.338|
+instr_op<4>    |         |         |    1.819|    1.819|
+instr_op<5>    |         |         |    1.801|    1.801|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock instr_op<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+instr_op<0>    |         |         |    1.922|    1.922|
+instr_op<1>    |         |         |    1.716|    1.716|
+instr_op<2>    |         |         |    2.187|    2.187|
+instr_op<3>    |         |         |    1.547|    1.547|
+instr_op<4>    |         |         |    2.028|    2.028|
+instr_op<5>    |         |         |    2.010|    2.010|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock instr_op<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+instr_op<0>    |         |         |    1.737|    1.737|
+instr_op<1>    |         |         |    1.531|    1.531|
+instr_op<2>    |         |         |    2.002|    2.002|
+instr_op<3>    |         |         |    1.362|    1.362|
+instr_op<4>    |         |         |    1.843|    1.843|
+instr_op<5>    |         |         |    1.825|    1.825|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock instr_op<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+instr_op<0>    |         |         |    1.526|    1.526|
+instr_op<1>    |         |         |    1.320|    1.320|
+instr_op<2>    |         |         |    1.791|    1.791|
+instr_op<3>    |         |         |    1.151|    1.151|
+instr_op<4>    |         |         |    1.632|    1.632|
+instr_op<5>    |         |         |    1.614|    1.614|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock instr_op<4>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+instr_op<0>    |         |         |    1.654|    1.654|
+instr_op<1>    |         |         |    1.448|    1.448|
+instr_op<2>    |         |         |    1.919|    1.919|
+instr_op<3>    |         |         |    1.279|    1.279|
+instr_op<4>    |         |         |    1.760|    1.760|
+instr_op<5>    |         |         |    1.742|    1.742|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock instr_op<5>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+instr_op<0>    |         |         |    1.448|    1.448|
+instr_op<1>    |         |         |    1.242|    1.242|
+instr_op<2>    |         |         |    1.713|    1.713|
+instr_op<3>    |         |         |    1.073|    1.073|
+instr_op<4>    |         |         |    1.554|    1.554|
+instr_op<5>    |         |         |    1.536|    1.536|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Mon Apr 29 20:03:10 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 159 MB
+
+
+

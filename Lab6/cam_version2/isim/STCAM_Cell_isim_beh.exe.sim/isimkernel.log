@@ -1,0 +1,29 @@
+Command line:
+   STCAM_Cell_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  50344
+
+Mon Jun 03 21:28:23 2019
+
+
+ Elaboration Time: 0.015625 sec
+
+ Current Memory Usage: 846.377 Meg
+
+ Total Signals          : 19
+ Total Nets             : 20
+ Total Signal Drivers   : 6
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 9
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 103
+Total Line Count : 21
+
+ Total Simulation Time: 0.015625 sec
+
+ Current Memory Usage: 846.377 Meg
+
+Mon Jun 03 21:28:28 2019
+

@@ -1,0 +1,6 @@
+verilog isim_temp "BCAM_Cell.v"
+verilog isim_temp "CAM_Row.v"
+verilog isim_temp "CAM_Array.v"
+verilog isim_temp "CAM_Wrapper.v"
+verilog isim_temp "CAM_Wrapper_tb.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,228 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml cs161_processor.twx cs161_processor.ncd -o
+cs161_processor.twr cs161_processor.pcf
+
+Design file:              cs161_processor.ncd
+Physical constraint file: cs161_processor.pcf
+Device,package,speed:     xc3s1200e,fg320,-5 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock clk to Pad
+------------------+------------+------------------------------+--------+
+                  | clk (edge) |                              | Clock  |
+Destination       |   to PAD   |Internal Clock(s)             | Phase  |
+------------------+------------+------------------------------+--------+
+instr_opcode<0>   |   14.287(R)|branchEXMEM/data_out_0_not0001|   0.000|
+instr_opcode<1>   |   15.002(R)|branchEXMEM/data_out_0_not0001|   0.000|
+instr_opcode<2>   |   14.957(R)|branchEXMEM/data_out_0_not0001|   0.000|
+instr_opcode<3>   |   14.805(R)|branchEXMEM/data_out_0_not0001|   0.000|
+instr_opcode<4>   |   14.785(R)|branchEXMEM/data_out_0_not0001|   0.000|
+instr_opcode<5>   |   13.430(R)|branchEXMEM/data_out_0_not0001|   0.000|
+prog_count<0>     |    7.686(R)|branchEXMEM/data_out_0_not0001|   0.000|
+prog_count<1>     |    7.677(R)|branchEXMEM/data_out_0_not0001|   0.000|
+prog_count<2>     |   11.289(R)|branchEXMEM/data_out_0_not0001|   0.000|
+prog_count<3>     |   12.269(R)|branchEXMEM/data_out_0_not0001|   0.000|
+prog_count<4>     |   12.068(R)|branchEXMEM/data_out_0_not0001|   0.000|
+prog_count<5>     |   12.306(R)|branchEXMEM/data_out_0_not0001|   0.000|
+prog_count<6>     |   12.092(R)|branchEXMEM/data_out_0_not0001|   0.000|
+prog_count<7>     |   12.226(R)|branchEXMEM/data_out_0_not0001|   0.000|
+prog_count<8>     |   12.123(R)|branchEXMEM/data_out_0_not0001|   0.000|
+prog_count<9>     |   12.515(R)|branchEXMEM/data_out_0_not0001|   0.000|
+prog_count<10>    |   12.584(R)|branchEXMEM/data_out_0_not0001|   0.000|
+prog_count<11>    |   13.015(R)|branchEXMEM/data_out_0_not0001|   0.000|
+prog_count<12>    |   12.756(R)|branchEXMEM/data_out_0_not0001|   0.000|
+prog_count<13>    |   12.293(R)|branchEXMEM/data_out_0_not0001|   0.000|
+prog_count<14>    |   12.411(R)|branchEXMEM/data_out_0_not0001|   0.000|
+prog_count<15>    |   12.994(R)|branchEXMEM/data_out_0_not0001|   0.000|
+prog_count<16>    |   12.231(R)|branchEXMEM/data_out_0_not0001|   0.000|
+prog_count<17>    |   13.126(R)|branchEXMEM/data_out_0_not0001|   0.000|
+prog_count<18>    |   12.911(R)|branchEXMEM/data_out_0_not0001|   0.000|
+prog_count<19>    |   12.660(R)|branchEXMEM/data_out_0_not0001|   0.000|
+prog_count<20>    |   12.745(R)|branchEXMEM/data_out_0_not0001|   0.000|
+prog_count<21>    |   13.127(R)|branchEXMEM/data_out_0_not0001|   0.000|
+prog_count<22>    |   12.286(R)|branchEXMEM/data_out_0_not0001|   0.000|
+prog_count<23>    |   13.449(R)|branchEXMEM/data_out_0_not0001|   0.000|
+prog_count<24>    |   12.879(R)|branchEXMEM/data_out_0_not0001|   0.000|
+prog_count<25>    |   13.271(R)|branchEXMEM/data_out_0_not0001|   0.000|
+prog_count<26>    |   13.252(R)|branchEXMEM/data_out_0_not0001|   0.000|
+prog_count<27>    |   13.619(R)|branchEXMEM/data_out_0_not0001|   0.000|
+prog_count<28>    |   12.845(R)|branchEXMEM/data_out_0_not0001|   0.000|
+prog_count<29>    |   15.332(R)|branchEXMEM/data_out_0_not0001|   0.000|
+prog_count<30>    |   13.440(R)|branchEXMEM/data_out_0_not0001|   0.000|
+prog_count<31>    |   13.894(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_addr<0>      |   16.443(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_addr<1>      |   16.221(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_addr<2>      |   15.891(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_addr<3>      |   15.229(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_addr<4>      |   14.887(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_data<0>      |   12.719(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_data<1>      |   12.653(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_data<2>      |   13.033(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_data<3>      |   13.001(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_data<4>      |   13.021(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_data<5>      |   12.831(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_data<6>      |   12.887(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_data<7>      |   13.169(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_data<8>      |   12.379(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_data<9>      |   12.672(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_data<10>     |   12.989(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_data<11>     |   12.581(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_data<12>     |   13.136(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_data<13>     |   13.404(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_data<14>     |   12.792(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_data<15>     |   12.002(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_data<16>     |   12.804(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_data<17>     |   13.012(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_data<18>     |   11.930(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_data<19>     |   11.711(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_data<20>     |   12.193(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_data<21>     |   12.744(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_data<22>     |   13.950(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_data<23>     |   14.536(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_data<24>     |   13.464(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_data<25>     |   11.665(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_data<26>     |   13.135(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_data<27>     |   11.750(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_data<28>     |   12.119(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_data<29>     |   12.697(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_data<30>     |   13.060(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg1_data<31>     |   12.224(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_addr<0>      |   15.710(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_addr<1>      |   15.790(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_addr<2>      |   14.288(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_addr<3>      |   15.237(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_addr<4>      |   14.876(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_data<0>      |   12.195(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_data<1>      |   12.220(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_data<2>      |   13.334(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_data<3>      |   13.492(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_data<4>      |   14.678(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_data<5>      |   14.554(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_data<6>      |   14.246(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_data<7>      |   14.264(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_data<8>      |   15.517(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_data<9>      |   13.918(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_data<10>     |   15.442(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_data<11>     |   12.356(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_data<12>     |   13.349(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_data<13>     |   14.372(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_data<14>     |   15.627(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_data<15>     |   13.819(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_data<16>     |   14.380(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_data<17>     |   12.113(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_data<18>     |   14.786(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_data<19>     |   13.716(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_data<20>     |   12.445(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_data<21>     |   13.670(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_data<22>     |   13.538(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_data<23>     |   13.603(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_data<24>     |   13.702(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_data<25>     |   13.764(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_data<26>     |   13.520(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_data<27>     |   14.366(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_data<28>     |   13.900(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_data<29>     |   14.048(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_data<30>     |   14.587(R)|branchEXMEM/data_out_0_not0001|   0.000|
+reg2_data<31>     |   15.020(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_addr<0> |    8.885(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_addr<1> |    9.107(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_addr<2> |   11.687(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_addr<3> |    9.702(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_addr<4> |    9.888(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_data<0> |   11.127(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_data<1> |   10.525(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_data<2> |   11.455(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_data<3> |   10.903(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_data<4> |   11.449(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_data<5> |   12.367(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_data<6> |   13.123(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_data<7> |   12.767(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_data<8> |   11.186(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_data<9> |   10.798(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_data<10>|   11.356(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_data<11>|   11.717(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_data<12>|   10.292(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_data<13>|   10.433(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_data<14>|   10.095(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_data<15>|   11.863(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_data<16>|   11.310(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_data<17>|   11.467(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_data<18>|    9.636(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_data<19>|   10.024(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_data<20>|   10.905(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_data<21>|   10.303(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_data<22>|   11.789(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_data<23>|   11.332(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_data<24>|   12.069(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_data<25>|   11.259(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_data<26>|   11.844(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_data<27>|   11.544(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_data<28>|   11.994(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_data<29>|   11.881(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_data<30>|   11.601(R)|branchEXMEM/data_out_0_not0001|   0.000|
+write_reg_data<31>|   12.440(R)|branchEXMEM/data_out_0_not0001|   0.000|
+------------------+------------+------------------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   10.259|    1.230|         |         |
+rst            |    6.653|    8.141|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock rst
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    5.734|         |    5.252|         |
+rst            |    1.667|         |   -0.098|   -0.098|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Mon May 20 21:00:03 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 255 MB
+
+
+

@@ -1,0 +1,308 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml CAM_Wrapper.twx CAM_Wrapper.ncd -o CAM_Wrapper.twr
+CAM_Wrapper.pcf
+
+Design file:              CAM_Wrapper.ncd
+Physical constraint file: CAM_Wrapper.pcf
+Device,package,speed:     xc3s100e,cp132,-5 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock we_decoded_row_address<0>
+--------------+------------+------------+------------------------------+--------+
+              |Max Setup to|Max Hold to |                              | Clock  |
+Source        | clk (edge) | clk (edge) |Internal Clock(s)             | Phase  |
+--------------+------------+------------+------------------------------+--------+
+search_word<0>|    0.453(F)|    0.734(F)|we_decoded_row_address_0_BUFGP|   0.000|
+search_word<1>|    0.876(F)|    0.396(F)|we_decoded_row_address_0_BUFGP|   0.000|
+search_word<2>|    1.534(F)|   -0.127(F)|we_decoded_row_address_0_BUFGP|   0.000|
+search_word<3>|    0.336(F)|    0.828(F)|we_decoded_row_address_0_BUFGP|   0.000|
+search_word<4>|    1.039(F)|    0.264(F)|we_decoded_row_address_0_BUFGP|   0.000|
+search_word<5>|    1.161(F)|    0.167(F)|we_decoded_row_address_0_BUFGP|   0.000|
+search_word<6>|    1.189(F)|    0.146(F)|we_decoded_row_address_0_BUFGP|   0.000|
+search_word<7>|    0.667(F)|    0.563(F)|we_decoded_row_address_0_BUFGP|   0.000|
+--------------+------------+------------+------------------------------+--------+
+
+Setup/Hold to clock we_decoded_row_address<1>
+--------------+------------+------------+------------------------------+--------+
+              |Max Setup to|Max Hold to |                              | Clock  |
+Source        | clk (edge) | clk (edge) |Internal Clock(s)             | Phase  |
+--------------+------------+------------+------------------------------+--------+
+search_word<0>|    0.688(F)|    0.546(F)|we_decoded_row_address_1_BUFGP|   0.000|
+search_word<1>|    0.879(F)|    0.393(F)|we_decoded_row_address_1_BUFGP|   0.000|
+search_word<2>|    1.694(F)|   -0.258(F)|we_decoded_row_address_1_BUFGP|   0.000|
+search_word<3>|    1.064(F)|    0.245(F)|we_decoded_row_address_1_BUFGP|   0.000|
+search_word<4>|    0.906(F)|    0.366(F)|we_decoded_row_address_1_BUFGP|   0.000|
+search_word<5>|    1.411(F)|   -0.033(F)|we_decoded_row_address_1_BUFGP|   0.000|
+search_word<6>|    1.553(F)|   -0.145(F)|we_decoded_row_address_1_BUFGP|   0.000|
+search_word<7>|    0.635(F)|    0.588(F)|we_decoded_row_address_1_BUFGP|   0.000|
+--------------+------------+------------+------------------------------+--------+
+
+Setup/Hold to clock we_decoded_row_address<2>
+--------------+------------+------------+------------------------------+--------+
+              |Max Setup to|Max Hold to |                              | Clock  |
+Source        | clk (edge) | clk (edge) |Internal Clock(s)             | Phase  |
+--------------+------------+------------+------------------------------+--------+
+search_word<0>|    1.177(F)|    0.154(F)|we_decoded_row_address_2_BUFGP|   0.000|
+search_word<1>|    0.537(F)|    0.667(F)|we_decoded_row_address_2_BUFGP|   0.000|
+search_word<2>|    0.685(F)|    0.549(F)|we_decoded_row_address_2_BUFGP|   0.000|
+search_word<3>|    1.382(F)|   -0.010(F)|we_decoded_row_address_2_BUFGP|   0.000|
+search_word<4>|    1.387(F)|   -0.013(F)|we_decoded_row_address_2_BUFGP|   0.000|
+search_word<5>|    0.942(F)|    0.343(F)|we_decoded_row_address_2_BUFGP|   0.000|
+search_word<6>|    0.757(F)|    0.491(F)|we_decoded_row_address_2_BUFGP|   0.000|
+search_word<7>|    0.667(F)|    0.563(F)|we_decoded_row_address_2_BUFGP|   0.000|
+--------------+------------+------------+------------------------------+--------+
+
+Setup/Hold to clock we_decoded_row_address<3>
+--------------+------------+------------+------------------------------+--------+
+              |Max Setup to|Max Hold to |                              | Clock  |
+Source        | clk (edge) | clk (edge) |Internal Clock(s)             | Phase  |
+--------------+------------+------------+------------------------------+--------+
+search_word<0>|    0.882(F)|    0.391(F)|we_decoded_row_address_3_BUFGP|   0.000|
+search_word<1>|    1.054(F)|    0.252(F)|we_decoded_row_address_3_BUFGP|   0.000|
+search_word<2>|    1.218(F)|    0.122(F)|we_decoded_row_address_3_BUFGP|   0.000|
+search_word<3>|    0.719(F)|    0.521(F)|we_decoded_row_address_3_BUFGP|   0.000|
+search_word<4>|    0.381(F)|    0.786(F)|we_decoded_row_address_3_BUFGP|   0.000|
+search_word<5>|    1.831(F)|   -0.368(F)|we_decoded_row_address_3_BUFGP|   0.000|
+search_word<6>|    1.059(F)|    0.249(F)|we_decoded_row_address_3_BUFGP|   0.000|
+search_word<7>|    2.230(F)|   -0.694(F)|we_decoded_row_address_3_BUFGP|   0.000|
+--------------+------------+------------+------------------------------+--------+
+
+Setup/Hold to clock we_decoded_row_address<4>
+--------------+------------+------------+------------------------------+--------+
+              |Max Setup to|Max Hold to |                              | Clock  |
+Source        | clk (edge) | clk (edge) |Internal Clock(s)             | Phase  |
+--------------+------------+------------+------------------------------+--------+
+search_word<0>|    1.082(F)|    0.231(F)|we_decoded_row_address_4_BUFGP|   0.000|
+search_word<1>|    0.713(F)|    0.523(F)|we_decoded_row_address_4_BUFGP|   0.000|
+search_word<2>|    1.014(F)|    0.285(F)|we_decoded_row_address_4_BUFGP|   0.000|
+search_word<3>|    0.673(F)|    0.558(F)|we_decoded_row_address_4_BUFGP|   0.000|
+search_word<4>|   -0.333(F)|    1.359(F)|we_decoded_row_address_4_BUFGP|   0.000|
+search_word<5>|    0.252(F)|    0.891(F)|we_decoded_row_address_4_BUFGP|   0.000|
+search_word<6>|    0.542(F)|    0.661(F)|we_decoded_row_address_4_BUFGP|   0.000|
+search_word<7>|    2.706(F)|   -1.072(F)|we_decoded_row_address_4_BUFGP|   0.000|
+--------------+------------+------------+------------------------------+--------+
+
+Setup/Hold to clock we_decoded_row_address<5>
+--------------+------------+------------+------------------------------+--------+
+              |Max Setup to|Max Hold to |                              | Clock  |
+Source        | clk (edge) | clk (edge) |Internal Clock(s)             | Phase  |
+--------------+------------+------------+------------------------------+--------+
+search_word<0>|    0.774(F)|    0.478(F)|we_decoded_row_address_5_BUFGP|   0.000|
+search_word<1>|    0.185(F)|    0.945(F)|we_decoded_row_address_5_BUFGP|   0.000|
+search_word<2>|    0.506(F)|    0.691(F)|we_decoded_row_address_5_BUFGP|   0.000|
+search_word<3>|    0.910(F)|    0.368(F)|we_decoded_row_address_5_BUFGP|   0.000|
+search_word<4>|    0.418(F)|    0.760(F)|we_decoded_row_address_5_BUFGP|   0.000|
+search_word<5>|    0.030(F)|    1.071(F)|we_decoded_row_address_5_BUFGP|   0.000|
+search_word<6>|    0.795(F)|    0.461(F)|we_decoded_row_address_5_BUFGP|   0.000|
+search_word<7>|    2.944(F)|   -1.260(F)|we_decoded_row_address_5_BUFGP|   0.000|
+--------------+------------+------------+------------------------------+--------+
+
+Setup/Hold to clock we_decoded_row_address<6>
+--------------+------------+------------+------------------------------+--------+
+              |Max Setup to|Max Hold to |                              | Clock  |
+Source        | clk (edge) | clk (edge) |Internal Clock(s)             | Phase  |
+--------------+------------+------------+------------------------------+--------+
+search_word<0>|    0.538(F)|    0.666(F)|we_decoded_row_address_6_BUFGP|   0.000|
+search_word<1>|    0.889(F)|    0.381(F)|we_decoded_row_address_6_BUFGP|   0.000|
+search_word<2>|    1.308(F)|    0.045(F)|we_decoded_row_address_6_BUFGP|   0.000|
+search_word<3>|    0.919(F)|    0.362(F)|we_decoded_row_address_6_BUFGP|   0.000|
+search_word<4>|    0.584(F)|    0.624(F)|we_decoded_row_address_6_BUFGP|   0.000|
+search_word<5>|    2.042(F)|   -0.542(F)|we_decoded_row_address_6_BUFGP|   0.000|
+search_word<6>|    0.849(F)|    0.412(F)|we_decoded_row_address_6_BUFGP|   0.000|
+search_word<7>|    1.657(F)|   -0.235(F)|we_decoded_row_address_6_BUFGP|   0.000|
+--------------+------------+------------+------------------------------+--------+
+
+Setup/Hold to clock we_decoded_row_address<7>
+--------------+------------+------------+------------------------------+--------+
+              |Max Setup to|Max Hold to |                              | Clock  |
+Source        | clk (edge) | clk (edge) |Internal Clock(s)             | Phase  |
+--------------+------------+------------+------------------------------+--------+
+search_word<0>|    0.594(F)|    0.621(F)|we_decoded_row_address_7_BUFGP|   0.000|
+search_word<1>|    1.226(F)|    0.111(F)|we_decoded_row_address_7_BUFGP|   0.000|
+search_word<2>|    1.483(F)|   -0.095(F)|we_decoded_row_address_7_BUFGP|   0.000|
+search_word<3>|    0.897(F)|    0.379(F)|we_decoded_row_address_7_BUFGP|   0.000|
+search_word<4>|    0.881(F)|    0.386(F)|we_decoded_row_address_7_BUFGP|   0.000|
+search_word<5>|    2.042(F)|   -0.542(F)|we_decoded_row_address_7_BUFGP|   0.000|
+search_word<6>|    0.830(F)|    0.427(F)|we_decoded_row_address_7_BUFGP|   0.000|
+search_word<7>|   -0.093(F)|    1.166(F)|we_decoded_row_address_7_BUFGP|   0.000|
+--------------+------------+------------+------------------------------+--------+
+
+Clock we_decoded_row_address<0> to Pad
+------------------------+------------+------------------------------+--------+
+                        | clk (edge) |                              | Clock  |
+Destination             |   to PAD   |Internal Clock(s)             | Phase  |
+------------------------+------------+------------------------------+--------+
+decoded_match_address<0>|    9.888(F)|we_decoded_row_address_0_BUFGP|   0.000|
+------------------------+------------+------------------------------+--------+
+
+Clock we_decoded_row_address<1> to Pad
+------------------------+------------+------------------------------+--------+
+                        | clk (edge) |                              | Clock  |
+Destination             |   to PAD   |Internal Clock(s)             | Phase  |
+------------------------+------------+------------------------------+--------+
+decoded_match_address<1>|    9.875(F)|we_decoded_row_address_1_BUFGP|   0.000|
+------------------------+------------+------------------------------+--------+
+
+Clock we_decoded_row_address<2> to Pad
+------------------------+------------+------------------------------+--------+
+                        | clk (edge) |                              | Clock  |
+Destination             |   to PAD   |Internal Clock(s)             | Phase  |
+------------------------+------------+------------------------------+--------+
+decoded_match_address<2>|    9.658(F)|we_decoded_row_address_2_BUFGP|   0.000|
+------------------------+------------+------------------------------+--------+
+
+Clock we_decoded_row_address<3> to Pad
+------------------------+------------+------------------------------+--------+
+                        | clk (edge) |                              | Clock  |
+Destination             |   to PAD   |Internal Clock(s)             | Phase  |
+------------------------+------------+------------------------------+--------+
+decoded_match_address<3>|    9.585(F)|we_decoded_row_address_3_BUFGP|   0.000|
+------------------------+------------+------------------------------+--------+
+
+Clock we_decoded_row_address<4> to Pad
+------------------------+------------+------------------------------+--------+
+                        | clk (edge) |                              | Clock  |
+Destination             |   to PAD   |Internal Clock(s)             | Phase  |
+------------------------+------------+------------------------------+--------+
+decoded_match_address<4>|    9.972(F)|we_decoded_row_address_4_BUFGP|   0.000|
+------------------------+------------+------------------------------+--------+
+
+Clock we_decoded_row_address<5> to Pad
+------------------------+------------+------------------------------+--------+
+                        | clk (edge) |                              | Clock  |
+Destination             |   to PAD   |Internal Clock(s)             | Phase  |
+------------------------+------------+------------------------------+--------+
+decoded_match_address<5>|   10.006(F)|we_decoded_row_address_5_BUFGP|   0.000|
+------------------------+------------+------------------------------+--------+
+
+Clock we_decoded_row_address<6> to Pad
+------------------------+------------+------------------------------+--------+
+                        | clk (edge) |                              | Clock  |
+Destination             |   to PAD   |Internal Clock(s)             | Phase  |
+------------------------+------------+------------------------------+--------+
+decoded_match_address<6>|    9.658(F)|we_decoded_row_address_6_BUFGP|   0.000|
+------------------------+------------+------------------------------+--------+
+
+Clock we_decoded_row_address<7> to Pad
+------------------------+------------+------------------------------+--------+
+                        | clk (edge) |                              | Clock  |
+Destination             |   to PAD   |Internal Clock(s)             | Phase  |
+------------------------+------------+------------------------------+--------+
+decoded_match_address<7>|   10.670(F)|we_decoded_row_address_7_BUFGP|   0.000|
+------------------------+------------+------------------------------+--------+
+
+Pad to Pad
+---------------+------------------------+---------+
+Source Pad     |Destination Pad         |  Delay  |
+---------------+------------------------+---------+
+search_word<0> |decoded_match_address<0>|    8.305|
+search_word<0> |decoded_match_address<1>|    8.531|
+search_word<0> |decoded_match_address<2>|    8.817|
+search_word<0> |decoded_match_address<3>|    8.037|
+search_word<0> |decoded_match_address<4>|    9.010|
+search_word<0> |decoded_match_address<5>|    8.674|
+search_word<0> |decoded_match_address<6>|    8.709|
+search_word<0> |decoded_match_address<7>|    8.982|
+search_word<1> |decoded_match_address<0>|    7.994|
+search_word<1> |decoded_match_address<1>|    8.321|
+search_word<1> |decoded_match_address<2>|    7.980|
+search_word<1> |decoded_match_address<3>|    7.745|
+search_word<1> |decoded_match_address<4>|    7.795|
+search_word<1> |decoded_match_address<5>|    8.084|
+search_word<1> |decoded_match_address<6>|    8.277|
+search_word<1> |decoded_match_address<7>|    9.553|
+search_word<2> |decoded_match_address<0>|    9.161|
+search_word<2> |decoded_match_address<1>|    9.294|
+search_word<2> |decoded_match_address<2>|    8.637|
+search_word<2> |decoded_match_address<3>|    8.947|
+search_word<2> |decoded_match_address<4>|    7.994|
+search_word<2> |decoded_match_address<5>|    8.122|
+search_word<2> |decoded_match_address<6>|    8.715|
+search_word<2> |decoded_match_address<7>|    9.162|
+search_word<3> |decoded_match_address<0>|    8.274|
+search_word<3> |decoded_match_address<1>|    8.994|
+search_word<3> |decoded_match_address<2>|    8.522|
+search_word<3> |decoded_match_address<3>|    8.001|
+search_word<3> |decoded_match_address<4>|    8.426|
+search_word<3> |decoded_match_address<5>|    8.625|
+search_word<3> |decoded_match_address<6>|    8.675|
+search_word<3> |decoded_match_address<7>|    9.343|
+search_word<4> |decoded_match_address<0>|    7.901|
+search_word<4> |decoded_match_address<1>|    8.286|
+search_word<4> |decoded_match_address<2>|    8.391|
+search_word<4> |decoded_match_address<3>|    7.100|
+search_word<4> |decoded_match_address<4>|    6.809|
+search_word<4> |decoded_match_address<5>|    7.756|
+search_word<4> |decoded_match_address<6>|    7.261|
+search_word<4> |decoded_match_address<7>|    7.951|
+search_word<5> |decoded_match_address<0>|    8.468|
+search_word<5> |decoded_match_address<1>|    8.851|
+search_word<5> |decoded_match_address<2>|    8.976|
+search_word<5> |decoded_match_address<3>|    8.419|
+search_word<5> |decoded_match_address<4>|    7.746|
+search_word<5> |decoded_match_address<5>|    7.856|
+search_word<5> |decoded_match_address<6>|    8.973|
+search_word<5> |decoded_match_address<7>|   10.006|
+search_word<6> |decoded_match_address<0>|    8.898|
+search_word<6> |decoded_match_address<1>|    8.574|
+search_word<6> |decoded_match_address<2>|    8.282|
+search_word<6> |decoded_match_address<3>|    8.633|
+search_word<6> |decoded_match_address<4>|    8.066|
+search_word<6> |decoded_match_address<5>|    8.713|
+search_word<6> |decoded_match_address<6>|    7.378|
+search_word<6> |decoded_match_address<7>|    7.831|
+search_word<7> |decoded_match_address<0>|    8.015|
+search_word<7> |decoded_match_address<1>|    7.846|
+search_word<7> |decoded_match_address<2>|    7.936|
+search_word<7> |decoded_match_address<3>|    8.625|
+search_word<7> |decoded_match_address<4>|    9.480|
+search_word<7> |decoded_match_address<5>|   10.219|
+search_word<7> |decoded_match_address<6>|    8.297|
+search_word<7> |decoded_match_address<7>|    7.670|
+---------------+------------------------+---------+
+
+
+Analysis completed Mon May 27 02:04:46 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 176 MB
+
+
+

@@ -1,0 +1,29 @@
+Command line:
+   SPFPAdder_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50600
+
+Sat Jun 15 16:21:40 2019
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 845.804 Meg
+
+ Total Signals          : 23
+ Total Nets             : 217
+ Total Signal Drivers   : 12
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 15
+ Total Traceable Variables  : 35
+ Total Scalar Nets and Variables : 548
+Total Line Count : 69
+
+ Total Simulation Time: 0.046875 sec
+
+ Current Memory Usage: 845.804 Meg
+
+Sat Jun 15 16:21:46 2019
+

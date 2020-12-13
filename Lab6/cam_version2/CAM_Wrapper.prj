@@ -1,0 +1,4 @@
+verilog work "../Resources/BCAM_Cell.v"
+verilog work "../Resources/CAM_Row.v"
+verilog work "../Resources/CAM_Array.v"
+verilog work "../Resources/CAM_Wrapper.v"

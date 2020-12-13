@@ -1,0 +1,51 @@
+ISim log file
+Running: D:\UCR\2019 Spring\CS161L\Lab2\fixedFloatingPoint\fixedFloatConversion_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/UCR/2019 Spring/CS161L/Lab2/fixedFloatingPoint/fixedFloatConversion_tb_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ TC 00 ....... 00000000 00000000 
+ TC 01 ....... 41040000 41040000 
+ TC 02 ....... c1040000 c1040000 
+ TC 03 ....... 3dc80000 3dc80000 
+ TC 04 ....... be800000 be800000 
+ TC 05 ....... 477fffff 477fffff 
+ TC 06 ....... 46feffff 46feffff 
+ TC 07 ....... 4bffffff 4bffffff 
+ TC 08 ....... 00000420 00000420 
+# run 2.00us
+ TC 09 ....... fffffbe0 fffffbe0 
+ TC 10 ....... 00000ccc 00000ccc 
+ TC 11 ....... 00004200 00004200 
+ TC 12 ....... 00000001 00000001 
+ TC 13 ....... 00000001 00000001 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ TC 00 ....... 00000000 00000000 
+ TC 01 ....... 41040000 41040000 
+ TC 02 ....... c1040000 c1040000 
+ TC 03 ....... 3dc80000 3dc80000 
+ TC 04 ....... be800000 be800000 
+ TC 05 ....... 477fffff 477fffff 
+ TC 06 ....... 46feffff 46feffff 
+ TC 07 ....... 4bffffff 4bffffff 
+ TC 08 ....... 00000420 00000420 
+# run 1.50us
+ TC 09 ....... fffffbe0 fffffbe0 
+ TC 10 ....... 00000ccc 00000ccc 
+ TC 11 ....... 00004200 00004200 
+ TC 12 ....... 00000001 00000001 
+ TC 13 ....... 00000001 00000001 

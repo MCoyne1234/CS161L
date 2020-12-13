@@ -1,0 +1,244 @@
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-cp132-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-cp132-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s500e-cp132-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-ft256-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1200e-ft256-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPFPAdder.twx SPFPAdder.ncd -o SPFPAdder.twr SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-ft256-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1200e-ft256-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPFPAdder.twx SPFPAdder.ncd -o SPFPAdder.twr SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-ft256-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1200e-ft256-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPFPAdder.twx SPFPAdder.ncd -o SPFPAdder.twr SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-ft256-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1200e-ft256-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPFPAdder.twx SPFPAdder.ncd -o SPFPAdder.twr SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-ft256-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1200e-ft256-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPFPAdder.twx SPFPAdder.ncd -o SPFPAdder.twr SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-ft256-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1200e-ft256-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPFPAdder.twx SPFPAdder.ncd -o SPFPAdder.twr SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-ft256-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1200e-ft256-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPFPAdder.twx SPFPAdder.ncd -o SPFPAdder.twr SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-ft256-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1200e-ft256-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPFPAdder.twx SPFPAdder.ncd -o SPFPAdder.twr SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-ft256-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1200e-ft256-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPFPAdder.twx SPFPAdder.ncd -o SPFPAdder.twr SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-ft256-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1200e-ft256-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPFPAdder.twx SPFPAdder.ncd -o SPFPAdder.twr SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-ft256-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1200e-ft256-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-ft256-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1200e-ft256-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPFPAdder.twx SPFPAdder.ncd -o SPFPAdder.twr SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-ft256-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1200e-ft256-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPFPAdder.twx SPFPAdder.ncd -o SPFPAdder.twr SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-ft256-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1200e-ft256-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPFPAdder.twx SPFPAdder.ncd -o SPFPAdder.twr SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-ft256-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1200e-ft256-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPFPAdder.twx SPFPAdder.ncd -o SPFPAdder.twr SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-ft256-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1200e-ft256-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPFPAdder.twx SPFPAdder.ncd -o SPFPAdder.twr SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-ft256-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1200e-ft256-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPFPAdder.twx SPFPAdder.ncd -o SPFPAdder.twr SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-ft256-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1200e-ft256-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPFPAdder.twx SPFPAdder.ncd -o SPFPAdder.twr SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-ft256-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1200e-ft256-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPFPAdder.twx SPFPAdder.ncd -o SPFPAdder.twr SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-ft256-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1200e-ft256-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPFPAdder.twx SPFPAdder.ncd -o SPFPAdder.twr SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-ft256-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1200e-ft256-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPFPAdder.twx SPFPAdder.ncd -o SPFPAdder.twr SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-ft256-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1200e-ft256-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPFPAdder.twx SPFPAdder.ncd -o SPFPAdder.twr SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-ft256-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1200e-ft256-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPFPAdder.twx SPFPAdder.ncd -o SPFPAdder.twr SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-ft256-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1200e-ft256-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPFPAdder.twx SPFPAdder.ncd -o SPFPAdder.twr SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-ft256-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1200e-ft256-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPFPAdder.twx SPFPAdder.ncd -o SPFPAdder.twr SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-ft256-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1200e-ft256-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPFPAdder.twx SPFPAdder.ncd -o SPFPAdder.twr SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-ft256-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1200e-ft256-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1600e-fg320-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1600e-fg320-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPFPAdder.twx SPFPAdder.ncd -o SPFPAdder.twr SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1600e-fg320-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1600e-fg320-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPFPAdder.twx SPFPAdder.ncd -o SPFPAdder.twr SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1600e-fg320-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1600e-fg320-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPFPAdder.twx SPFPAdder.ncd -o SPFPAdder.twr SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1600e-fg320-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1600e-fg320-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPFPAdder.twx SPFPAdder.ncd -o SPFPAdder.twr SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1600e-fg320-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1600e-fg320-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPFPAdder.twx SPFPAdder.ncd -o SPFPAdder.twr SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1600e-fg320-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1600e-fg320-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPFPAdder.twx SPFPAdder.ncd -o SPFPAdder.twr SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1600e-fg320-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1600e-fg320-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPFPAdder.twx SPFPAdder.ncd -o SPFPAdder.twr SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1600e-fg320-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1600e-fg320-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPFPAdder.twx SPFPAdder.ncd -o SPFPAdder.twr SPFPAdder.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab7/float_adder/SPFPAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1600e-fg320-5 "SPFPAdder.ngc" SPFPAdder.ngd  
+map -intstyle ise -p xc3s1600e-fg320-5 -cm area -ir off -pr off -c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+par -w -intstyle ise -ol high -t 1 SPFPAdder_map.ncd SPFPAdder.ncd SPFPAdder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPFPAdder.twx SPFPAdder.ncd -o SPFPAdder.twr SPFPAdder.pcf 

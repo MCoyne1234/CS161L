@@ -1,0 +1,95 @@
+ISim log file
+Running: D:\UCR\2019 Spring\CS161L\Lab1\testing_setup\my_alu_testbench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/UCR/2019 Spring/CS161L/Lab1/testing_setup/my_alu_testbench_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+Test: Unsigned Add - One plus one.
+Result is correct
+
+Test: Unsigned Add - Overflow.
+Result is correct
+
+Test: Unsigned Add - Zero.
+Result is correct
+
+Test: Signed Add - simple.
+Result is correct
+
+Test: Signed Add - overflow.
+Result is correct
+# run 5000ns
+
+Test: Signed Add->  -1+1=0.
+Result is correct
+
+Test: Signed Add -> -1 + -1 = -2.
+Result is correct
+
+Test: Signed Add->  -127 + -2 -> 127 underflow.
+Result is correct
+
+Test: Unsigned subtract - Two minus one.
+Result is correct
+
+Test: Unsigned Subtract - Overflow.
+Result is correct
+
+Test: Unsigned Sub - Zero.
+Result is correct
+
+Test: Signed Subtract - simple and zero.
+Result is correct
+
+Test: Signed  Subtract - pos neg.
+Result is correct
+
+Test: Signed  Subtract ->  neg pos.
+Result is correct
+
+Test: Signed  Subtract underflow.
+Result is correct
+
+Test: Signed  Subtract -> overflow.
+Result is correct
+
+Test: AND -> 0xFF & 0xFF.
+Result is correct
+
+Test: AND -> 0xFF & 0x0F.
+Result is correct
+
+Test: AND -> 0xFF & 0x00.
+Result is correct
+
+Test: OR -> 0xFF | 0xFF.
+Result is correct
+
+Test: OR -> 0xFF | 0x0F.
+Result is correct
+
+Test: OR -> 0xFF | 0x0F.
+Result is correct
+
+Test: XOR -> 0x0F ^ 0xF0.
+Result is correct
+
+Test: XOR -> 0x00 ^ 0x00.
+Result is correct
+
+Test: XOR -> 0xFF ^ 0xFF.
+Result is correct
+
+Test: A div 2 -> 0xFF.
+Result is correct
+
+Test: A div 2 -> 0x01.
+Result is correct

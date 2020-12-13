@@ -1,0 +1,91 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Map Application Log File for Design 'SPFPAdder'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s1600e-fg320-5 -cm area -ir off -pr off
+-c 100 -o SPFPAdder_map.ncd SPFPAdder.ngd SPFPAdder.pcf 
+Target Device  : xc3s1600e
+Target Package : fg320
+Target Speed   : -5
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Sat Jun 15 16:40:11 2019
+
+Mapping design into LUTs...
+Running directed packing...
+WARNING:Pack:266 - The function generator Sh10 failed to merge with F5
+   multiplexer yourresult_mux0023<18>39_f5.  There is a conflict for the FXMUX. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator Sh78_SW0 failed to merge with F5
+   multiplexer Sh76_f5.  There is a conflict for the FXMUX.  The design will
+   exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator Sh79_SW0 failed to merge with F5
+   multiplexer Sh77_f5.  There is a conflict for the FXMUX.  The design will
+   exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator Sh12 failed to merge with F5
+   multiplexer yourresult_mux0023<20>81_f5.  There is a conflict for the FXMUX. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator Sh13 failed to merge with F5
+   multiplexer yourresult_mux0023<21>81_f5.  There is a conflict for the FXMUX. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator Sh8 failed to merge with F5
+   multiplexer yourresult_mux0023<16>39_f5.  There is a conflict for the FXMUX. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator Sh9 failed to merge with F5
+   multiplexer yourresult_mux0023<17>39_f5.  There is a conflict for the FXMUX. 
+   The design will exhibit suboptimal timing.
+Running delay-based LUT packing...
+Running related packing...
+Updating timing models...
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    7
+Logic Utilization:
+  Number of Slice Latches:               32 out of  29,504    1%
+  Number of 4 input LUTs:               585 out of  29,504    1%
+Logic Distribution:
+  Number of occupied Slices:            301 out of  14,752    2%
+    Number of Slices containing only related logic:     301 out of     301 100%
+    Number of Slices containing unrelated logic:          0 out of     301   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         593 out of  29,504    2%
+    Number used as logic:               585
+    Number used as a route-thru:          8
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                166 out of     250   66%
+    IOB Flip Flops:                      33
+  Number of BUFGMUXs:                     2 out of      24    8%
+
+Average Fanout of Non-Clock Nets:                3.27
+
+Peak Memory Usage:  337 MB
+Total REAL time to MAP completion:  1 secs 
+Total CPU time to MAP completion:   1 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "SPFPAdder_map.mrp" for details.

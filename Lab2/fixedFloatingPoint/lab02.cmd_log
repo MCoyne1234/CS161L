@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab2/fixedFloatingPoint/lab02.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab2/fixedFloatingPoint/lab02.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-tq144-5 "lab02.ngc" lab02.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o lab02_map.ncd lab02.ngd lab02.pcf 
+par -w -intstyle ise -ol high -t 1 lab02_map.ncd lab02.ncd lab02.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lab02.twx lab02.ncd -o lab02.twr lab02.pcf 
+xst -intstyle ise -ifn "D:/UCR/2019 Spring/CS161L/Lab2/fixedFloatingPoint/lab02.xst" -ofn "D:/UCR/2019 Spring/CS161L/Lab2/fixedFloatingPoint/lab02.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-tq144-5 "lab02.ngc" lab02.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr off -c 100 -o lab02_map.ncd lab02.ngd lab02.pcf 
+par -w -intstyle ise -ol high -t 1 lab02_map.ncd lab02.ncd lab02.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lab02.twx lab02.ncd -o lab02.twr lab02.pcf 

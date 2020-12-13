@@ -1,0 +1,691 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: CAM_Wrapper.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "CAM_Wrapper.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "CAM_Wrapper"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-cp132
+
+---- Source Options
+Top Module Name                    : CAM_Wrapper
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "BCAM_Cell.v" in library work
+Compiling verilog file "CAM_Row.v" in library work
+Module <BCAM_Cell> compiled
+Compiling verilog file "CAM_Array.v" in library work
+Module <CAM_Row> compiled
+Compiling verilog file "CAM_Wrapper.v" in library work
+Module <CAM_Array> compiled
+Module <CAM_Wrapper> compiled
+No errors in compilation
+Analysis of file <"CAM_Wrapper.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <CAM_Wrapper> in library <work> with parameters.
+	CAM_DEPTH = "00000000000000000000000000001000"
+	CAM_WIDTH = "00000000000000000000000000001000"
+
+Analyzing hierarchy for module <CAM_Array> in library <work> with parameters.
+	CAM_DEPTH = "00000000000000000000000000001000"
+	CAM_WIDTH = "00000000000000000000000000001000"
+
+Analyzing hierarchy for module <CAM_Row> in library <work> with parameters.
+	CAM_WIDTH = "00000000000000000000000000001000"
+
+Analyzing hierarchy for module <BCAM_Cell> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <CAM_Wrapper>.
+	CAM_DEPTH = 32'sb00000000000000000000000000001000
+	CAM_WIDTH = 32'sb00000000000000000000000000001000
+Module <CAM_Wrapper> is correct for synthesis.
+ 
+Analyzing module <CAM_Array> in library <work>.
+	CAM_DEPTH = 32'sb00000000000000000000000000001000
+	CAM_WIDTH = 32'sb00000000000000000000000000001000
+Module <CAM_Array> is correct for synthesis.
+ 
+Analyzing module <CAM_Row> in library <work>.
+	CAM_WIDTH = 32'sb00000000000000000000000000001000
+Module <CAM_Row> is correct for synthesis.
+ 
+Analyzing module <BCAM_Cell> in library <work>.
+WARNING:Xst:905 - "BCAM_Cell.v" line 18: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <we>, <cell_search_bit>
+Module <BCAM_Cell> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <BCAM_Cell>.
+    Related source file is "BCAM_Cell.v".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <cell_dont_care_bit> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:737 - Found 1-bit latch for signal <stored_bit>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit xor2 for signal <cell_match_bit_out$xor0000>.
+Unit <BCAM_Cell> synthesized.
+
+
+Synthesizing Unit <CAM_Row>.
+    Related source file is "CAM_Row.v".
+Unit <CAM_Row> synthesized.
+
+
+Synthesizing Unit <CAM_Array>.
+    Related source file is "CAM_Array.v".
+Unit <CAM_Array> synthesized.
+
+
+Synthesizing Unit <CAM_Wrapper>.
+    Related source file is "CAM_Wrapper.v".
+WARNING:Xst:1780 - Signal <we_decoded_row_address_buffered> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <search_word_buffered> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <rst_buffered> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <dont_care_mask_buffered> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <decoded_match_address_buffered> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <CAM_Wrapper> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 64
+ 1-bit latch                                           : 64
+# Xors                                                 : 64
+ 1-bit xor2                                            : 64
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 64
+ 1-bit latch                                           : 64
+# Xors                                                 : 64
+ 1-bit xor2                                            : 64
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <CAM_Wrapper> ...
+
+Optimizing unit <CAM_Array> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block CAM_Wrapper, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : CAM_Wrapper.ngr
+Top Level Output File Name         : CAM_Wrapper
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 34
+
+Cell Usage :
+# BELS                             : 40
+#      LUT4                        : 40
+# FlipFlops/Latches                : 64
+#      LD                          : 64
+# Clock Buffers                    : 8
+#      BUFGP                       : 8
+# IO Buffers                       : 16
+#      IBUF                        : 8
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-5 
+
+ Number of Slices:                       37  out of    960     3%  
+ Number of Slice Flip Flops:             64  out of   1920     3%  
+ Number of 4 input LUTs:                 40  out of   1920     2%  
+ Number of IOs:                          34
+ Number of bonded IOBs:                  24  out of     83    28%  
+ Number of GCLKs:                         8  out of     24    33%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+we_decoded_row_address<0>          | BUFGP                  | 8     |
+we_decoded_row_address<1>          | BUFGP                  | 8     |
+we_decoded_row_address<2>          | BUFGP                  | 8     |
+we_decoded_row_address<3>          | BUFGP                  | 8     |
+we_decoded_row_address<4>          | BUFGP                  | 8     |
+we_decoded_row_address<5>          | BUFGP                  | 8     |
+we_decoded_row_address<6>          | BUFGP                  | 8     |
+we_decoded_row_address<7>          | BUFGP                  | 8     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 2.253ns
+   Maximum output required time after clock: 6.356ns
+   Maximum combinational path delay: 7.313ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'we_decoded_row_address<0>'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              2.253ns (Levels of Logic = 1)
+  Source:            search_word<7> (PAD)
+  Destination:       cam_arr/gencamarr[0].camrow/gencamrow[7].bcam/stored_bit (LATCH)
+  Destination Clock: we_decoded_row_address<0> falling
+
+  Data Path: search_word<7> to cam_arr/gencamarr[0].camrow/gencamrow[7].bcam/stored_bit
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.106   0.879  search_word_7_IBUF (search_word_7_IBUF)
+     LD:D                      0.268          cam_arr/gencamarr[0].camrow/gencamrow[7].bcam/stored_bit
+    ----------------------------------------
+    Total                      2.253ns (1.374ns logic, 0.879ns route)
+                                       (61.0% logic, 39.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'we_decoded_row_address<1>'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              2.253ns (Levels of Logic = 1)
+  Source:            search_word<7> (PAD)
+  Destination:       cam_arr/gencamarr[1].camrow/gencamrow[7].bcam/stored_bit (LATCH)
+  Destination Clock: we_decoded_row_address<1> falling
+
+  Data Path: search_word<7> to cam_arr/gencamarr[1].camrow/gencamrow[7].bcam/stored_bit
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.106   0.879  search_word_7_IBUF (search_word_7_IBUF)
+     LD:D                      0.268          cam_arr/gencamarr[1].camrow/gencamrow[7].bcam/stored_bit
+    ----------------------------------------
+    Total                      2.253ns (1.374ns logic, 0.879ns route)
+                                       (61.0% logic, 39.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'we_decoded_row_address<2>'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              2.253ns (Levels of Logic = 1)
+  Source:            search_word<7> (PAD)
+  Destination:       cam_arr/gencamarr[2].camrow/gencamrow[7].bcam/stored_bit (LATCH)
+  Destination Clock: we_decoded_row_address<2> falling
+
+  Data Path: search_word<7> to cam_arr/gencamarr[2].camrow/gencamrow[7].bcam/stored_bit
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.106   0.879  search_word_7_IBUF (search_word_7_IBUF)
+     LD:D                      0.268          cam_arr/gencamarr[2].camrow/gencamrow[7].bcam/stored_bit
+    ----------------------------------------
+    Total                      2.253ns (1.374ns logic, 0.879ns route)
+                                       (61.0% logic, 39.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'we_decoded_row_address<3>'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              2.253ns (Levels of Logic = 1)
+  Source:            search_word<7> (PAD)
+  Destination:       cam_arr/gencamarr[3].camrow/gencamrow[7].bcam/stored_bit (LATCH)
+  Destination Clock: we_decoded_row_address<3> falling
+
+  Data Path: search_word<7> to cam_arr/gencamarr[3].camrow/gencamrow[7].bcam/stored_bit
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.106   0.879  search_word_7_IBUF (search_word_7_IBUF)
+     LD:D                      0.268          cam_arr/gencamarr[3].camrow/gencamrow[7].bcam/stored_bit
+    ----------------------------------------
+    Total                      2.253ns (1.374ns logic, 0.879ns route)
+                                       (61.0% logic, 39.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'we_decoded_row_address<4>'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              2.253ns (Levels of Logic = 1)
+  Source:            search_word<7> (PAD)
+  Destination:       cam_arr/gencamarr[4].camrow/gencamrow[7].bcam/stored_bit (LATCH)
+  Destination Clock: we_decoded_row_address<4> falling
+
+  Data Path: search_word<7> to cam_arr/gencamarr[4].camrow/gencamrow[7].bcam/stored_bit
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.106   0.879  search_word_7_IBUF (search_word_7_IBUF)
+     LD:D                      0.268          cam_arr/gencamarr[4].camrow/gencamrow[7].bcam/stored_bit
+    ----------------------------------------
+    Total                      2.253ns (1.374ns logic, 0.879ns route)
+                                       (61.0% logic, 39.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'we_decoded_row_address<5>'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              2.253ns (Levels of Logic = 1)
+  Source:            search_word<7> (PAD)
+  Destination:       cam_arr/gencamarr[5].camrow/gencamrow[7].bcam/stored_bit (LATCH)
+  Destination Clock: we_decoded_row_address<5> falling
+
+  Data Path: search_word<7> to cam_arr/gencamarr[5].camrow/gencamrow[7].bcam/stored_bit
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.106   0.879  search_word_7_IBUF (search_word_7_IBUF)
+     LD:D                      0.268          cam_arr/gencamarr[5].camrow/gencamrow[7].bcam/stored_bit
+    ----------------------------------------
+    Total                      2.253ns (1.374ns logic, 0.879ns route)
+                                       (61.0% logic, 39.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'we_decoded_row_address<6>'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              2.253ns (Levels of Logic = 1)
+  Source:            search_word<7> (PAD)
+  Destination:       cam_arr/gencamarr[6].camrow/gencamrow[7].bcam/stored_bit (LATCH)
+  Destination Clock: we_decoded_row_address<6> falling
+
+  Data Path: search_word<7> to cam_arr/gencamarr[6].camrow/gencamrow[7].bcam/stored_bit
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.106   0.879  search_word_7_IBUF (search_word_7_IBUF)
+     LD:D                      0.268          cam_arr/gencamarr[6].camrow/gencamrow[7].bcam/stored_bit
+    ----------------------------------------
+    Total                      2.253ns (1.374ns logic, 0.879ns route)
+                                       (61.0% logic, 39.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'we_decoded_row_address<7>'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              2.253ns (Levels of Logic = 1)
+  Source:            search_word<7> (PAD)
+  Destination:       cam_arr/gencamarr[7].camrow/gencamrow[7].bcam/stored_bit (LATCH)
+  Destination Clock: we_decoded_row_address<7> falling
+
+  Data Path: search_word<7> to cam_arr/gencamarr[7].camrow/gencamrow[7].bcam/stored_bit
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.106   0.879  search_word_7_IBUF (search_word_7_IBUF)
+     LD:D                      0.268          cam_arr/gencamarr[7].camrow/gencamrow[7].bcam/stored_bit
+    ----------------------------------------
+    Total                      2.253ns (1.374ns logic, 0.879ns route)
+                                       (61.0% logic, 39.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'we_decoded_row_address<7>'
+  Total number of paths / destination ports: 8 / 1
+-------------------------------------------------------------------------
+Offset:              6.356ns (Levels of Logic = 3)
+  Source:            cam_arr/gencamarr[7].camrow/gencamrow[3].bcam/stored_bit (LATCH)
+  Destination:       decoded_match_address<7> (PAD)
+  Source Clock:      we_decoded_row_address<7> falling
+
+  Data Path: cam_arr/gencamarr[7].camrow/gencamrow[3].bcam/stored_bit to decoded_match_address<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.588   0.509  cam_arr/gencamarr[7].camrow/gencamrow[3].bcam/stored_bit (cam_arr/gencamarr[7].camrow/gencamrow[3].bcam/stored_bit)
+     LUT4:I0->O            1   0.612   0.509  cam_arr/gencamarr[7].camrow/gencamrow[7].bcam/cell_match_bit_out26 (cam_arr/gencamarr[7].camrow/gencamrow[7].bcam/cell_match_bit_out26)
+     LUT4:I0->O            1   0.612   0.357  cam_arr/gencamarr[7].camrow/gencamrow[7].bcam/cell_match_bit_out139 (decoded_match_address_7_OBUF)
+     OBUF:I->O                 3.169          decoded_match_address_7_OBUF (decoded_match_address<7>)
+    ----------------------------------------
+    Total                      6.356ns (4.981ns logic, 1.375ns route)
+                                       (78.4% logic, 21.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'we_decoded_row_address<6>'
+  Total number of paths / destination ports: 8 / 1
+-------------------------------------------------------------------------
+Offset:              6.356ns (Levels of Logic = 3)
+  Source:            cam_arr/gencamarr[6].camrow/gencamrow[3].bcam/stored_bit (LATCH)
+  Destination:       decoded_match_address<6> (PAD)
+  Source Clock:      we_decoded_row_address<6> falling
+
+  Data Path: cam_arr/gencamarr[6].camrow/gencamrow[3].bcam/stored_bit to decoded_match_address<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.588   0.509  cam_arr/gencamarr[6].camrow/gencamrow[3].bcam/stored_bit (cam_arr/gencamarr[6].camrow/gencamrow[3].bcam/stored_bit)
+     LUT4:I0->O            1   0.612   0.509  cam_arr/gencamarr[6].camrow/gencamrow[7].bcam/cell_match_bit_out26 (cam_arr/gencamarr[6].camrow/gencamrow[7].bcam/cell_match_bit_out26)
+     LUT4:I0->O            1   0.612   0.357  cam_arr/gencamarr[6].camrow/gencamrow[7].bcam/cell_match_bit_out139 (decoded_match_address_6_OBUF)
+     OBUF:I->O                 3.169          decoded_match_address_6_OBUF (decoded_match_address<6>)
+    ----------------------------------------
+    Total                      6.356ns (4.981ns logic, 1.375ns route)
+                                       (78.4% logic, 21.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'we_decoded_row_address<5>'
+  Total number of paths / destination ports: 8 / 1
+-------------------------------------------------------------------------
+Offset:              6.356ns (Levels of Logic = 3)
+  Source:            cam_arr/gencamarr[5].camrow/gencamrow[3].bcam/stored_bit (LATCH)
+  Destination:       decoded_match_address<5> (PAD)
+  Source Clock:      we_decoded_row_address<5> falling
+
+  Data Path: cam_arr/gencamarr[5].camrow/gencamrow[3].bcam/stored_bit to decoded_match_address<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.588   0.509  cam_arr/gencamarr[5].camrow/gencamrow[3].bcam/stored_bit (cam_arr/gencamarr[5].camrow/gencamrow[3].bcam/stored_bit)
+     LUT4:I0->O            1   0.612   0.509  cam_arr/gencamarr[5].camrow/gencamrow[7].bcam/cell_match_bit_out26 (cam_arr/gencamarr[5].camrow/gencamrow[7].bcam/cell_match_bit_out26)
+     LUT4:I0->O            1   0.612   0.357  cam_arr/gencamarr[5].camrow/gencamrow[7].bcam/cell_match_bit_out139 (decoded_match_address_5_OBUF)
+     OBUF:I->O                 3.169          decoded_match_address_5_OBUF (decoded_match_address<5>)
+    ----------------------------------------
+    Total                      6.356ns (4.981ns logic, 1.375ns route)
+                                       (78.4% logic, 21.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'we_decoded_row_address<4>'
+  Total number of paths / destination ports: 8 / 1
+-------------------------------------------------------------------------
+Offset:              6.356ns (Levels of Logic = 3)
+  Source:            cam_arr/gencamarr[4].camrow/gencamrow[3].bcam/stored_bit (LATCH)
+  Destination:       decoded_match_address<4> (PAD)
+  Source Clock:      we_decoded_row_address<4> falling
+
+  Data Path: cam_arr/gencamarr[4].camrow/gencamrow[3].bcam/stored_bit to decoded_match_address<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.588   0.509  cam_arr/gencamarr[4].camrow/gencamrow[3].bcam/stored_bit (cam_arr/gencamarr[4].camrow/gencamrow[3].bcam/stored_bit)
+     LUT4:I0->O            1   0.612   0.509  cam_arr/gencamarr[4].camrow/gencamrow[7].bcam/cell_match_bit_out26 (cam_arr/gencamarr[4].camrow/gencamrow[7].bcam/cell_match_bit_out26)
+     LUT4:I0->O            1   0.612   0.357  cam_arr/gencamarr[4].camrow/gencamrow[7].bcam/cell_match_bit_out139 (decoded_match_address_4_OBUF)
+     OBUF:I->O                 3.169          decoded_match_address_4_OBUF (decoded_match_address<4>)
+    ----------------------------------------
+    Total                      6.356ns (4.981ns logic, 1.375ns route)
+                                       (78.4% logic, 21.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'we_decoded_row_address<3>'
+  Total number of paths / destination ports: 8 / 1
+-------------------------------------------------------------------------
+Offset:              6.356ns (Levels of Logic = 3)
+  Source:            cam_arr/gencamarr[3].camrow/gencamrow[6].bcam/stored_bit (LATCH)
+  Destination:       decoded_match_address<3> (PAD)
+  Source Clock:      we_decoded_row_address<3> falling
+
+  Data Path: cam_arr/gencamarr[3].camrow/gencamrow[6].bcam/stored_bit to decoded_match_address<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.588   0.509  cam_arr/gencamarr[3].camrow/gencamrow[6].bcam/stored_bit (cam_arr/gencamarr[3].camrow/gencamrow[6].bcam/stored_bit)
+     LUT4:I0->O            1   0.612   0.509  cam_arr/gencamarr[3].camrow/gencamrow[7].bcam/cell_match_bit_out26 (cam_arr/gencamarr[3].camrow/gencamrow[7].bcam/cell_match_bit_out26)
+     LUT4:I0->O            1   0.612   0.357  cam_arr/gencamarr[3].camrow/gencamrow[7].bcam/cell_match_bit_out139 (decoded_match_address_3_OBUF)
+     OBUF:I->O                 3.169          decoded_match_address_3_OBUF (decoded_match_address<3>)
+    ----------------------------------------
+    Total                      6.356ns (4.981ns logic, 1.375ns route)
+                                       (78.4% logic, 21.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'we_decoded_row_address<2>'
+  Total number of paths / destination ports: 8 / 1
+-------------------------------------------------------------------------
+Offset:              6.356ns (Levels of Logic = 3)
+  Source:            cam_arr/gencamarr[2].camrow/gencamrow[6].bcam/stored_bit (LATCH)
+  Destination:       decoded_match_address<2> (PAD)
+  Source Clock:      we_decoded_row_address<2> falling
+
+  Data Path: cam_arr/gencamarr[2].camrow/gencamrow[6].bcam/stored_bit to decoded_match_address<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.588   0.509  cam_arr/gencamarr[2].camrow/gencamrow[6].bcam/stored_bit (cam_arr/gencamarr[2].camrow/gencamrow[6].bcam/stored_bit)
+     LUT4:I0->O            1   0.612   0.509  cam_arr/gencamarr[2].camrow/gencamrow[7].bcam/cell_match_bit_out26 (cam_arr/gencamarr[2].camrow/gencamrow[7].bcam/cell_match_bit_out26)
+     LUT4:I0->O            1   0.612   0.357  cam_arr/gencamarr[2].camrow/gencamrow[7].bcam/cell_match_bit_out139 (decoded_match_address_2_OBUF)
+     OBUF:I->O                 3.169          decoded_match_address_2_OBUF (decoded_match_address<2>)
+    ----------------------------------------
+    Total                      6.356ns (4.981ns logic, 1.375ns route)
+                                       (78.4% logic, 21.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'we_decoded_row_address<1>'
+  Total number of paths / destination ports: 8 / 1
+-------------------------------------------------------------------------
+Offset:              6.356ns (Levels of Logic = 3)
+  Source:            cam_arr/gencamarr[1].camrow/gencamrow[6].bcam/stored_bit (LATCH)
+  Destination:       decoded_match_address<1> (PAD)
+  Source Clock:      we_decoded_row_address<1> falling
+
+  Data Path: cam_arr/gencamarr[1].camrow/gencamrow[6].bcam/stored_bit to decoded_match_address<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.588   0.509  cam_arr/gencamarr[1].camrow/gencamrow[6].bcam/stored_bit (cam_arr/gencamarr[1].camrow/gencamrow[6].bcam/stored_bit)
+     LUT4:I0->O            1   0.612   0.509  cam_arr/gencamarr[1].camrow/gencamrow[7].bcam/cell_match_bit_out26 (cam_arr/gencamarr[1].camrow/gencamrow[7].bcam/cell_match_bit_out26)
+     LUT4:I0->O            1   0.612   0.357  cam_arr/gencamarr[1].camrow/gencamrow[7].bcam/cell_match_bit_out139 (decoded_match_address_1_OBUF)
+     OBUF:I->O                 3.169          decoded_match_address_1_OBUF (decoded_match_address<1>)
+    ----------------------------------------
+    Total                      6.356ns (4.981ns logic, 1.375ns route)
+                                       (78.4% logic, 21.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'we_decoded_row_address<0>'
+  Total number of paths / destination ports: 8 / 1
+-------------------------------------------------------------------------
+Offset:              6.356ns (Levels of Logic = 3)
+  Source:            cam_arr/gencamarr[0].camrow/gencamrow[6].bcam/stored_bit (LATCH)
+  Destination:       decoded_match_address<0> (PAD)
+  Source Clock:      we_decoded_row_address<0> falling
+
+  Data Path: cam_arr/gencamarr[0].camrow/gencamrow[6].bcam/stored_bit to decoded_match_address<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.588   0.509  cam_arr/gencamarr[0].camrow/gencamrow[6].bcam/stored_bit (cam_arr/gencamarr[0].camrow/gencamrow[6].bcam/stored_bit)
+     LUT4:I0->O            1   0.612   0.509  cam_arr/gencamarr[0].camrow/gencamrow[7].bcam/cell_match_bit_out26 (cam_arr/gencamarr[0].camrow/gencamrow[7].bcam/cell_match_bit_out26)
+     LUT4:I0->O            1   0.612   0.357  cam_arr/gencamarr[0].camrow/gencamrow[7].bcam/cell_match_bit_out139 (decoded_match_address_0_OBUF)
+     OBUF:I->O                 3.169          decoded_match_address_0_OBUF (decoded_match_address<0>)
+    ----------------------------------------
+    Total                      6.356ns (4.981ns logic, 1.375ns route)
+                                       (78.4% logic, 21.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 64 / 8
+-------------------------------------------------------------------------
+Delay:               7.313ns (Levels of Logic = 4)
+  Source:            search_word<3> (PAD)
+  Destination:       decoded_match_address<7> (PAD)
+
+  Data Path: search_word<3> to decoded_match_address<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.106   0.948  search_word_3_IBUF (search_word_3_IBUF)
+     LUT4:I1->O            1   0.612   0.509  cam_arr/gencamarr[7].camrow/gencamrow[7].bcam/cell_match_bit_out26 (cam_arr/gencamarr[7].camrow/gencamrow[7].bcam/cell_match_bit_out26)
+     LUT4:I0->O            1   0.612   0.357  cam_arr/gencamarr[7].camrow/gencamrow[7].bcam/cell_match_bit_out139 (decoded_match_address_7_OBUF)
+     OBUF:I->O                 3.169          decoded_match_address_7_OBUF (decoded_match_address<7>)
+    ----------------------------------------
+    Total                      7.313ns (5.499ns logic, 1.814ns route)
+                                       (75.2% logic, 24.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.89 secs
+ 
+--> 
+
+Total memory usage is 310016 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

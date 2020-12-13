@@ -1,0 +1,29 @@
+Command line:
+   fixedFloatConversion_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50266
+
+Mon Apr 22 20:07:22 2019
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 845.869 Meg
+
+ Total Signals          : 19
+ Total Nets             : 85
+ Total Signal Drivers   : 11
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 16
+ Total Traceable Variables  : 36
+ Total Scalar Nets and Variables : 530
+Total Line Count : 161
+
+ Total Simulation Time: 0.40625 sec
+
+ Current Memory Usage: 688.583 Meg
+
+Mon Apr 22 20:24:21 2019
+
